@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>緣 尋找另一半|服務據點</title>
+  <link rel="stylesheet" href="./css/branch.css">
+
+  <link rel="shortcut icon" href="./images/favicon.ico">
+  <link rel="stylesheet" href="./css/common/Animate.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="nav_bar">
+      <ul class="ul_first">
+
+        <li class="pair"><a href="./pair.html" class="a_first">
+            <div><img src="./images/list_relationship.png" alt=""></div>配對聊天
+          </a>
+          <ul class="ul_second">
+            <li><a href="./pair.html"><i>選擇對象</i></a></li>
+            <hr>
+            <li><a href="./pair.html"><i>聊天室</i></a></li>
+          </ul>
+        </li>
+        <li class="practice"><a href="./practice.html" class="a_first">
+            <div><img src="./images/list_practice.png" alt=""></div>戀愛修行
+          </a>
+          <ul class="ul_second">
+            <li><a href="./practice.html"><i>課程學習</i></a></li>
+            <hr>
+            <li><a href="./practice.html"><i>戶外郊遊</i></a></li>
+            <hr>
+            <li><a href="./practice.html"><i>文青行程</i></a></li>
+            <hr>
+            <li><a href="./practice.html"><i>客製化</i></a></li>
+          </ul>
+        </li>
+        <li class="logo"><a href="./index.html"><img src="./images/LOGO_FIN.png" alt=""></a></li>
+        <li class="graduation"><a href="./graduation.html">
+            <div><img src="./images/list_diploma.png" alt=""></div>校友花絮
+          </a></li>
+        <li class="question"><a href="./question.html">
+            <div><img src="./images/list_question.png" alt=""></div>常見問題
+          </a></li>
+      </ul>
+    </nav>
+
+    <nav class="mobile_nav">
+      <div class="mobile_comtent_all">
+        <div class="moblie_logo"><a href="./index.html"><img src="./images/LOGO_FIN_orange.png" alt=""></a>
+        </div>
+        <div class="right">
+          <div class="login"><a href="./login.html">
+              <div class="icon"><img src="./images/list_member.png" alt=""></div>
+              登入
+            </a></div>
+          <div class="register"><a href="./register1.html">
+              <div class="icon"><img src="./images/list_register.png" alt=""></div>
+              加入我們
+            </a></div>
+
+          <button class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+
+        <div class="hamburger_menu">
+          <ul class="ul_first">
+            <li class="pair list_pair" id="list_pair">
+              <div><img src="./images/list_relationship.png" alt=""></div>配對聊天 ▼
+
+              <ul class="ul_second list_pair_item" id="list_pair_item">
+                <li><a href="./pair.html"><i>選擇對象</i></a></li>
+                <li><a href="./pair.html"><i>聊天室</i></a></li>
+              </ul>
+            </li>
+            <li class="practice list_practice" id="list_practice">
+              <div><img src="./images/list_practice.png" alt=""></div>戀愛修行 ▼
+              <ul class="ul_second list_practice_item">
+                <li><a href="./practice.html"><i>課程學習</i></a></li>
+                <li><a href="./practice.html"><i>戶外郊遊</i></a></li>
+                <li><a href="./practice.html"><i>文青行程</i></a></li>
+                <li><a href="./practice.html"><i>客製化</i></a></li>
+              </ul>
+            </li>
+            <li class="graduation"><a href="./graduation.html">
+                <div><img src="./images/list_diploma.png" alt=""></div>校友花絮
+              </a></li>
+            <li class="question"><a href="./question.html">
+                <div><img src="./images/list_question.png" alt=""></div>常見問題
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="fixed_right">
+    <div class="top" id="go_top">
+      <div class="icon"><img src="./images/start-up.png" alt=""></div>
+    </div>
+    <div class="right_login"><a href="./login.html">
+        <div class="icon"><img src="./images/list_member.png" alt=""></div>
+        <span>登入</span>
+      </a></div>
+    <div class="right_register"><a href="./register1.html">
+        <div class="icon"><img src="./images/list_register.png" alt=""></div><span>註冊</span>
+      </a></div>
+  </div>
+
+  <div class="banner_top"></div>
+  <div class="main_title">
+    <h1>服務據點</h1>
+  </div>
+
+  <main>
+    <div>
+      <div class="button_lever1 all_branch" id="choose_all_btn">全台服務據點</div>
+    </div>
+    <div class="city_select_box">
+      <select name="" id="city_select">
+        <option value="" style="display: none">請選擇縣市</option>
+        <option class="city5" value="city5">桃園市</option>
+        <option class="city8" value="city8">台中市</option>
+        <option class="city13" value="city13">高雄市</option>
+      </select>
+      <p class="text_or"><i>或點選地圖上的城市</i></p>
+    </div>
+    <div class="taiwan_map taiwan_map_top">
+      <img src="./images/taiwan-map.png" alt="">
+
+
+      <div class="taiwan_map_city5">
+        <img src="./images/taiwan5.png" alt="">
+        <div class="taiwan_map_city_hover" id="city5">
+          <img src="./images/taiwan5_shadow.png" alt="">
+        </div>
+      </div>
+
+
+      <div class="taiwan_map_city8">
+        <img src="./images/taiwan8.png" alt="">
+        <div class="taiwan_map_city_hover" id="city8">
+          <img src="./images/taiwan8_shadow.png" alt=""></div>
+      </div>
+
+      <div class="taiwan_map_city13">
+        <img src="./images/taiwan13.png" alt="">
+        <div class="taiwan_map_city_hover" id="city13">
+          <img src="./images/taiwan13_shadow.png" alt=""></div>
+      </div>
+
+      <div class="choose_all" id="choose_all"><img src="./images/taiwan-map_shadow.png" alt=""></div>
+    </div>
+
+
+
+    <div class="now_position" id="now_position">
+      <h2>桃園地區</h2>
+    </div>
+
+    <div class="branch_information scrollbar_box">
+
+      <div id="branch_taoyuan">
+        <div class="shop_box">
+          <div class="shop_name">
+            <h3>桃園誠品店</h3>
+          </div>
+          <div class="shop_address"><a href="">
+              <div class="map_img"><img src="./images/map_branch.png" alt=""></div>
+              <p>桃園區松高路11號6樓</p>
+            </a></div>
+          <table class="">
+            <tr>
+              <td>營業時間</td>
+              <td>
+                <div> 一～四 11:00~15:00 / 17:00~21:30</div>
+                <div>五　　 11:00~15:00 / 17:00~22:00</div>
+                <div>六　　 11:00~22:00</div>
+                <div>日　　 11:00~21:30</div>
+              </td>
+            </tr>
+            <tr>
+              <td>電話</td>
+              <td>02-2722-0583</td>
+            </tr>
+            <tr>
+              <td>網路電話</td>
+              <td>070-1012-8836</td>
+            </tr>
+            <tr>
+              <td>公車</td>
+              <td>【捷運市政府站】28, 32, 202, 212, 232, 261, 263, 270, 281, 651, 669</td>
+            </tr>
+            <tr>
+              <td>捷運</td>
+              <td>板南線【市政府站】2號出口</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="shop_box">
+          <div class="shop_name">
+            <h3>中壢站前店</h3>
+          </div>
+          <div class="shop_address"><a href="">
+              <div class="map_img"><img src="./images/map_branch.png" alt=""></div>
+              <p>中壢區環南路135號8樓</p>
+            </a></div>
+          <table class="">
+            <tr>
+              <td>營業時間</td>
+              <td>
+                <div> 一～四 11:00~15:00 / 17:00~21:30</div>
+                <div>五　　 11:00~15:00 / 17:00~22:00</div>
+                <div>六　　 11:00~22:00</div>
+                <div>日　　 11:00~21:30</div>
+              </td>
+            </tr>
+            <tr>
+              <td>電話</td>
+              <td>02-2722-0583</td>
+            </tr>
+            <tr>
+              <td>網路電話</td>
+              <td>070-1012-8836</td>
+            </tr>
+            <tr>
+              <td>公車</td>
+              <td>【捷運市政府站】28, 32, 202, 212, 232, 261, 263, 270, 281, 651, 669</td>
+            </tr>
+            <tr>
+              <td>捷運</td>
+              <td>板南線【市政府站】2號出口</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="shop_box">
+          <div class="shop_name">
+            <h3>中壢站前店</h3>
+          </div>
+          <div class="shop_address"><a href="">
+              <div class="map_img"><img src="./images/map_branch.png" alt=""></div>
+              <p>中壢區環南路135號8樓</p>
+            </a></div>
+          <table class="">
+            <tr>
+              <td>營業時間</td>
+              <td>
+                <div> 一～四 11:00~15:00 / 17:00~21:30</div>
+                <div>五　　 11:00~15:00 / 17:00~22:00</div>
+                <div>六　　 11:00~22:00</div>
+                <div>日　　 11:00~21:30</div>
+              </td>
+            </tr>
+            <tr>
+              <td>電話</td>
+              <td>02-2722-0583</td>
+            </tr>
+            <tr>
+              <td>網路電話</td>
+              <td>070-1012-8836</td>
+            </tr>
+            <tr>
+              <td>公車</td>
+              <td>【捷運市政府站】28, 32, 202, 212, 232, 261, 263, 270, 281, 651, 669</td>
+            </tr>
+            <tr>
+              <td>捷運</td>
+              <td>板南線【市政府站】2號出口</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div id="branch_taichung">
+        <div class="shop_box">
+          <div class="shop_name">
+            <h3>台中誠品店</h3>
+          </div>
+          <div class="shop_address"><a href="">
+              <div class="map_img"><img src="./images/map_branch.png" alt=""></div>
+              <p>大屯區松高路11號6樓</p>
+            </a></div>
+          <table class="">
+            <tr>
+              <td>營業時間</td>
+              <td>
+                <div> 一～四 11:00~15:00 / 17:00~21:30</div>
+                <div>五　　 11:00~15:00 / 17:00~22:00</div>
+                <div>六　　 11:00~22:00</div>
+                <div>日　　 11:00~21:30</div>
+              </td>
+            </tr>
+            <tr>
+              <td>電話</td>
+              <td>02-2722-0583</td>
+            </tr>
+            <tr>
+              <td>網路電話</td>
+              <td>070-1012-8836</td>
+            </tr>
+            <tr>
+              <td>公車</td>
+              <td>【捷運市政府站】28, 32, 202, 212, 232, 261, 263, 270, 281, 651, 669</td>
+            </tr>
+            <tr>
+              <td>捷運</td>
+              <td>板南線【市政府站】2號出口</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="shop_box">
+          <div class="shop_name">
+            <h3>大甲站前店</h3>
+          </div>
+          <div class="shop_address"><a href="">
+              <div class="map_img"><img src="./images/map_branch.png" alt=""></div>
+              <p>大甲區環南路135號8樓</p>
+            </a></div>
+          <table class="">
+            <tr>
+              <td>營業時間</td>
+              <td>
+                <div> 一～四 11:00~15:00 / 17:00~21:30</div>
+                <div>五　　 11:00~15:00 / 17:00~22:00</div>
+                <div>六　　 11:00~22:00</div>
+                <div>日　　 11:00~21:30</div>
+              </td>
+            </tr>
+            <tr>
+              <td>電話</td>
+              <td>02-2722-0583</td>
+            </tr>
+            <tr>
+              <td>網路電話</td>
+              <td>070-1012-8836</td>
+            </tr>
+            <tr>
+              <td>公車</td>
+              <td>【捷運市政府站】28, 32, 202, 212, 232, 261, 263, 270, 281, 651, 669</td>
+            </tr>
+            <tr>
+              <td>捷運</td>
+              <td>板南線【市政府站】2號出口</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="shop_box">
+          <div class="shop_name">
+            <h3>勤美商圈店</h3>
+          </div>
+          <div class="shop_address"><a href="">
+              <div class="map_img"><img src="./images/map_branch.png" alt=""></div>
+              <p>台中區環南路135號8樓</p>
+            </a></div>
+          <table class="">
+            <tr>
+              <td>營業時間</td>
+              <td>
+                <div> 一～四 11:00~15:00 / 17:00~21:30</div>
+                <div>五　　 11:00~15:00 / 17:00~22:00</div>
+                <div>六　　 11:00~22:00</div>
+                <div>日　　 11:00~21:30</div>
+              </td>
+            </tr>
+            <tr>
+              <td>電話</td>
+              <td>02-2722-0583</td>
+            </tr>
+            <tr>
+              <td>網路電話</td>
+              <td>070-1012-8836</td>
+            </tr>
+            <tr>
+              <td>公車</td>
+              <td>【捷運市政府站】28, 32, 202, 212, 232, 261, 263, 270, 281, 651, 669</td>
+            </tr>
+            <tr>
+              <td>捷運</td>
+              <td>板南線【市政府站】2號出口</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+
+      <div id="branch_kaohsiung">
+        <div class="shop_box">
+          <div class="shop_name">
+            <h3>高雄誠品店</h3>
+          </div>
+          <div class="shop_address"><a href="">
+              <div class="map_img"><img src="./images/map_branch.png" alt=""></div>
+              <p>鳳山區松高路11號6樓</p>
+            </a></div>
+          <table class="">
+            <tr>
+              <td>營業時間</td>
+              <td>
+                <div> 一～四 11:00~15:00 / 17:00~21:30</div>
+                <div>五　　 11:00~15:00 / 17:00~22:00</div>
+                <div>六　　 11:00~22:00</div>
+                <div>日　　 11:00~21:30</div>
+              </td>
+            </tr>
+            <tr>
+              <td>電話</td>
+              <td>02-2722-0583</td>
+            </tr>
+            <tr>
+              <td>網路電話</td>
+              <td>070-1012-8836</td>
+            </tr>
+            <tr>
+              <td>公車</td>
+              <td>【捷運市政府站】28, 32, 202, 212, 232, 261, 263, 270, 281, 651, 669</td>
+            </tr>
+            <tr>
+              <td>捷運</td>
+              <td>板南線【市政府站】2號出口</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="shop_box">
+          <div class="shop_name">
+            <h3>三民站前店</h3>
+          </div>
+          <div class="shop_address"><a href="">
+              <div class="map_img"><img src="./images/map_branch.png" alt=""></div>
+              <p>三民區環南路135號8樓</p>
+            </a></div>
+          <table class="">
+            <tr>
+              <td>營業時間</td>
+              <td>
+                <div> 一～四 11:00~15:00 / 17:00~21:30</div>
+                <div>五　　 11:00~15:00 / 17:00~22:00</div>
+                <div>六　　 11:00~22:00</div>
+                <div>日　　 11:00~21:30</div>
+              </td>
+            </tr>
+            <tr>
+              <td>電話</td>
+              <td>02-2722-0583</td>
+            </tr>
+            <tr>
+              <td>網路電話</td>
+              <td>070-1012-8836</td>
+            </tr>
+            <tr>
+              <td>公車</td>
+              <td>【捷運市政府站】28, 32, 202, 212, 232, 261, 263, 270, 281, 651, 669</td>
+            </tr>
+            <tr>
+              <td>捷運</td>
+              <td>板南線【市政府站】2號出口</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="shop_box">
+          <div class="shop_name">
+            <h3>左營站前店</h3>
+          </div>
+          <div class="shop_address"><a href="">
+              <div class="map_img"><img src="./images/map_branch.png" alt=""></div>
+              <p>左營區環南路135號8樓</p>
+            </a></div>
+          <table class="">
+            <tr>
+              <td>營業時間</td>
+              <td>
+                <div> 一～四 11:00~15:00 / 17:00~21:30</div>
+                <div>五　　 11:00~15:00 / 17:00~22:00</div>
+                <div>六　　 11:00~22:00</div>
+                <div>日　　 11:00~21:30</div>
+              </td>
+            </tr>
+            <tr>
+              <td>電話</td>
+              <td>02-2722-0583</td>
+            </tr>
+            <tr>
+              <td>網路電話</td>
+              <td>070-1012-8836</td>
+            </tr>
+            <tr>
+              <td>公車</td>
+              <td>【捷運市政府站】28, 32, 202, 212, 232, 261, 263, 270, 281, 651, 669</td>
+            </tr>
+            <tr>
+              <td>捷運</td>
+              <td>板南線【市政府站】2號出口</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+    <div class="taiwan_map taiwan_map_right">
+      <img src="./images/taiwan-map.png" alt="">
+
+
+      <div class="taiwan_map_city5">
+        <img src="./images/taiwan5.png" alt="">
+        <div class="taiwan_map_city_hover" id="city5">
+          <img src="./images/taiwan5_shadow.png" alt="">
+        </div>
+      </div>
+
+
+      <div class="taiwan_map_city8">
+        <img src="./images/taiwan8.png" alt="">
+        <div class="taiwan_map_city_hover" id="city8">
+          <img src="./images/taiwan8_shadow.png" alt=""></div>
+      </div>
+
+      <div class="taiwan_map_city13">
+        <img src="./images/taiwan13.png" alt="">
+        <div class="taiwan_map_city_hover" id="city13">
+          <img src="./images/taiwan13_shadow.png" alt=""></div>
+      </div>
+
+      <div class="choose_all" id="choose_all"><img src="./images/taiwan-map_shadow.png" alt=""></div>
+    </div>
+
+
+
+  </main>
+
+  <script>
+    function city5_fun() {
+      if (window.innerWidth < 575) {
+        document.getElementById("branch_taoyuan").style.height = "1637px";
+      } else {
+        document.getElementById("branch_taoyuan").style.height = "1270px";
+      }
+
+      document.getElementById("branch_taichung").style.height = "0";
+      document.getElementById("branch_kaohsiung").style.height = "0";
+
+      document.querySelector(".now_position h2").innerHTML = "桃園地區";
+    }
+
+    function city8_fun() {
+      if (window.innerWidth < 575) {
+        document.getElementById("branch_taichung").style.height = "1637px";
+      } else {
+        document.getElementById("branch_taichung").style.height = "1270px";
+      }
+
+      document.getElementById("branch_taoyuan").style.height = "0";
+      document.getElementById("branch_kaohsiung").style.height = "0";
+
+      document.querySelector(".now_position h2").innerHTML = "台中地區";
+    }
+
+    function city13_fun() {
+      if (window.innerWidth < 575) {
+        document.getElementById("branch_kaohsiung").style.height = "1637px";
+      } else {
+        document.getElementById("branch_kaohsiung").style.height = "1270px";
+      }
+
+      document.getElementById("branch_taichung").style.height = "0";
+      document.getElementById("branch_taoyuan").style.height = "0";
+
+      document.querySelector(".now_position h2").innerHTML = "高雄地區";
+    }
+
+    function choose_all_btn_fun() {
+      if (document.getElementById("choose_all_btn").innerHTML == "全台服務據點") {
+        document.getElementById("choose_all").style.display = "block";
+        document.querySelector("div.taiwan_map_right div.choose_all").style.display = "block";
+        document.getElementById("choose_all_btn").style.backgroundColor = "rgba(232, 139, 0)";
+        document.getElementById("choose_all_btn").style.color = "rgb(255,255,255)";
+        document.getElementById("choose_all_btn").innerHTML = "取消選取全部";
+        if (window.innerWidth<575){
+          document.querySelector("div.branch_information div#branch_taoyuan").style.height = "1637px";
+        document.querySelector("div.branch_information div#branch_taichung").style.height = "1637px";
+        document.querySelector("div.branch_information div#branch_kaohsiung").style.height = "1637px";
+        }else{
+          document.querySelector("div.branch_information div#branch_taoyuan").style.height = "1270px";
+        document.querySelector("div.branch_information div#branch_taichung").style.height = "1270px";
+        document.querySelector("div.branch_information div#branch_kaohsiung").style.height = "1270px";
+        }
+        
+        document.querySelector(".now_position h2").innerHTML = "全台服務據點";
+
+      } else {
+        document.getElementById("choose_all").style.display = "none";
+        document.querySelector("div.taiwan_map_right div.choose_all").style.display = "none";
+        document.getElementById("choose_all_btn").style.backgroundColor = "rgba(255,255,255)"
+        document.getElementById("choose_all_btn").style.color = "rgba(232, 139, 0)"
+        document.querySelector("div.branch_information div#branch_taichung").style.height = "0";
+        document.querySelector("div.branch_information div#branch_kaohsiung").style.height = "0";
+        document.getElementById("choose_all_btn").innerHTML = "全台服務據點";
+        document.querySelector(".now_position h2").innerHTML = "桃園地區";
+      }
+
+    }
+    document.querySelector(".taiwan_map_right .taiwan_map_city5 #city5").onclick = city5_fun;
+    document.querySelector(".taiwan_map_right .taiwan_map_city8 #city8").onclick = city8_fun;
+    document.querySelector(".taiwan_map_right .taiwan_map_city13 #city13").onclick = city13_fun;
+    document.getElementById("city5").onclick = city5_fun;
+    document.getElementById("city8").onclick = city8_fun;
+    document.getElementById("city13").onclick = city13_fun;
+    document.getElementById("choose_all_btn").onclick = choose_all_btn_fun;
+
+    document.getElementById('city_select').onchange = function () {
+      if (city_select.value == "city5") {
+        city5_fun();
+      } else if (city_select.value == "city8") {
+        city8_fun();
+      } else if (city_select.value == "city13") {
+        city13_fun();
+      }
+    }
+
+  </script>
+
+  <footer>
+    <div class="background_color_footer"></div>
+    <div class="footer_img"><img src="./images/1-4cut.png" alt=""></div>
+    <div class="logo logo_mobile"><img src="./images/LOGO_FIN.png" alt=""></div>
+    <div class="footer_content">
+      <div class="left">
+        <div class="contact">聯絡方式</div>
+        <div class="tel">TEL:03-425-7389</div>
+        <div class="fax">FAX:02-2737-7119</div>
+        <div class="address">320桃園市中壢區中大路300號</div>
+      </div>
+      <div class="right">
+
+        <div class="about_us"><span><a href="./about_us.html">關於我們</a></span></div>
+        <div class="branch"><span><a href="./branch.html">服務據點</a></span></div>
+      </div>
+      <div class="logo logo_computer"><img src="./images/LOGO_FIN.png" alt=""></div>
+    </div>
+    <div class="copyright">©2019 All Rights Reserved By TZU-YU,CHEN</div>
+  </footer>
+
+  <script src="./js/wow.min.js"></script>
+  <script>
+    var wow = new WOW({
+      boxClass: 'wow', // 要套用WOW.js縮需要的動畫class(預設是wow)
+      animateClass: 'animated', // 要"動起來"的動畫(預設是animated, 因此如果你有其他動畫library要使用也可以在這裡調整)
+      offset: 0, // 距離顯示多遠開始顯示動畫 (預設是0, 因此捲動到顯示時才出現動畫)
+      mobile: true, // 手機上是否要套用動畫 (預設是true)
+      live: true, // 非同步產生的內容是否也要套用 (預設是true, 非常適合搭配SPA)
+      callback: function (box) {
+        console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        // 當每個要開始時, 呼叫這裡面的內容, 參數是要開始進行動畫特效的element DOM
+      },
+    });
+    wow.init();
+  </script>
+
+  <script>
+    var header_active = function () {
+      // 取得使用者滑了多少 px
+      var scroll_top = $(window).scrollTop();
+      // 將 scroll_top 數值放到 p.-pos 內容
+      $("p.-pos").html(scroll_top);
+
+      if (scroll_top >= 200) {
+        $("div.fixed_right").addClass("-on");
+      } else {
+        $("div.fixed_right").removeClass("-on");
+      }
+    };
+    $(function () {
+      // 第三步：偵測頁面滑動時會觸發
+      $(window).scroll(function () {
+        header_active();
+      });
+    });
+  </script>
+
+
+  <script>
+    //go_top btn
+    // DOM 載入完成後執行
+    $(function () {
+
+      // 點擊按鈕，頁面滑到最上方
+      $("#go_top").on("click", function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: 0
+        }, 750);
+      });
+
+    });
+  </script>
+
+  <script src="./js/common/hamburger.js"></script>
+  <script>
+    $(function () {
+      // hamburger icon 的切換
+      $("button.hamburger").on("click", function () {
+        $(this).toggleClass("is-active");
+      });
+    });
+  </script>
+
+</body>
+
+</html>

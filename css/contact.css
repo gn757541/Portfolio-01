@@ -1,0 +1,53 @@
+@import "./common/header.css";
+@import "./common/footer.css";
+
+p.title {
+  padding: 10px;
+  /* border: 1px solid blue; */
+  text-align: center;
+}
+
+
+
+
+form.form table {
+  margin: 0 auto;
+  width: 520px;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+form.form table td {
+  /* border: 1px solid blue; */
+  
+}
+
+
+input.email {
+  padding: 5px 0px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+textarea{
+  /* padding:  0px 45px 0px 0px; */
+  border-radius: 5px;
+  width: 100%;
+  resize: none;
+}
+
+input.submit {
+  background-color: black;
+  color: white;
+  padding: 5px 20px;
+  }
+
+input.afternoon, input.night{
+  margin-left: 30px;
+}
+
+td:nth-child(1) {
+  vertical-align: top;
+  text-align: right;
+  padding: 15px 0px; 
+}

@@ -1,0 +1,291 @@
+@import "./common/other.css";
+
+div.banner_top {
+    background-image: url(../images/practice.jpg);
+}
+
+main {
+    font-size: 0;
+}
+
+main div.title_all {
+    width: 1182px;
+    margin: 15px auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    transition: all 0.5s;
+    flex-wrap: wrap;
+}
+
+
+main div.title_all div.title {
+    /* border: 1px solid red; */
+    border: 5px solid rgba(255, 255, 255, 0);
+    display: inline-block;
+    border-radius: 50% 50% 5% 50%;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    transition: all 0.5s;
+    box-shadow: 3px 3px 3px rgba(110, 110, 110, 0);
+}
+
+main div.title_all div.choose_title {
+    box-shadow: 3px 3px 3px rgba(110, 110, 110, 0.5);
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    transform: translate(-3px, -3px);
+}
+
+
+
+main div.title_all div#class_title {
+    background-color: rgba(255, 143, 143, 0.5);
+}
+
+main div.title_all div#excursion_title {
+    background-color: rgba(143, 182, 255, 0.5);
+}
+
+main div.title_all div#reading_title {
+    background-color: rgba(128, 192, 144, 0.5);
+}
+
+main div.title_all div#specialize_title {
+    background-color: rgba(224, 175, 111, 0.5);
+}
+
+main div.title_all div.title div.title_icon img {
+    width: 100%;
+}
+
+main div.title_all div.title div.title_icon {
+    width: 70px;
+    /* margin: 20px auto; */
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+}
+
+main div.title_all div.title h3 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    /* border: 1px solid red; */
+    margin: 0;
+    transition: all 0.5s;
+}
+
+main div.title_all div.title::before {
+    content: "";
+    /* border: 1px solid blue; */
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* width: 90%;
+    height: 90%; */
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    transition: all 0.5s;
+}
+
+main div.title_all div.title:hover {
+    cursor: pointer;
+}
+
+main div.title_all div.title:hover::before {
+    width: 90%;
+    height: 90%;
+}
+
+main div.title_all div.title:hover h3 {
+    color: rgba(0, 0, 0);
+}
+
+section img {
+    width: 100%;
+}
+
+section div.slick div.img {
+    width: 500px;
+}
+
+
+/*section背景*/
+section div.background_img {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid blue; */
+    position: absolute;
+    z-index: -1;
+    filter: opacity(0.5);
+    background-position: center;
+}
+
+section.class div.background_img {
+    background-image: url(../images/class.jpg);
+
+}
+
+section.excursion div.background_img {
+    background-image: url(../images/outside.jpg);
+}
+
+section.reading div.background_img {
+    background-image: url(../images/reading_group.jpg);
+}
+
+section.specialize div.background_img {
+    background-image: url(../images/spacelize.jpg);
+}
+
+section div.background_img div.color {
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 100%;
+}
+
+section.class div.background_img div.color {
+    background-color: rgba(255, 143, 143, 0.5);
+}
+
+section.excursion div.background_img div.color {
+    background-color: rgba(143, 182, 255, 0.5);
+}
+
+section.reading div.background_img div.color {
+    background-color: rgba(128, 192, 144, 0.5);
+}
+
+section.specialize div.background_img div.color {
+    background-color: rgba(224, 175, 111, 0.5);
+}
+
+/*section裡面*/
+
+
+
+#section_class,
+#section_excursion,
+#section_reading,
+#section_specialize {
+    /* border: 1px solid red; */
+    width: 1182px;
+    margin: 0 auto;
+    position: relative;
+    /* height: 680px; */
+    height: 0;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+#section_class {
+    height: 680px;
+}
+
+section div.class {
+    /* border: 1px solid blue; */
+    text-align: center;
+    outline: none;
+    padding: 15px 0;
+}
+
+section div.class div.img {
+    width: 40%;
+    display: inline-block;
+
+}
+
+section div.class div.content_all {
+    font-size: 16px;
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: 0 auto;
+    color: rgba(80, 80, 80, 1);
+}
+
+section div.class div.content_all div.content_title {
+    color: rgba(0, 0, 0);
+}
+
+button.slick-prev {
+    left: 15px;
+    z-index: 1;
+}
+
+button.slick-next {
+    right: 15px;
+}
+
+section div.course_slick div.class p {
+    text-align: start;
+}
+
+
+/*客製化*/
+section.specialize div.content_all {
+    text-align: center;
+}
+
+section.specialize div.content_all div {
+    /* border: 1px solid red; */
+    font-size: 16px;
+}
+
+section.specialize div.content_all div.cunstomlize_explain {
+    padding: 15px;
+}
+
+section.specialize div.content_all div.input_item {
+    margin-bottom: 15px;
+}
+
+section.specialize div.content_all textarea.other_requirst {
+    width: 300px;
+    height: 100px;
+}
+section.specialize div.content_all div.join{
+    margin: 15px 0;
+}
+
+
+@media screen and (max-width:1200px) {
+    main div.title_all {
+        width: 90%;
+    }
+
+    #section_class,
+    #section_excursion,
+    #section_reading,
+    #section_specialize {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    main div.title_all div.title {
+        margin: 1% 5%;
+    }
+
+}
+
+@media screen and (max-width:575px) {
+    main div.title_all div.title {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10%;
+    }
+
+    main div.title_all div.title h3 {
+        top: 120%;
+
+    }
+}

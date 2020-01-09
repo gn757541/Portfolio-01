@@ -1,0 +1,295 @@
+@import "./common/other.css";
+
+div.banner_top {
+  background-image: url(../images/branch.jpeg);
+}
+
+
+main {
+  width: 1183px;
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div.city_select_box p.text_or {
+  color: rgb(110, 110, 110)
+}
+
+/*店面資訊部分*/
+
+div.all_branch {
+  margin: 2% auto;
+  /* transform: translateX(-50%); */
+}
+
+div.now_position {
+  /* width: 40%; */
+  /* border: 1px solid red; */
+  text-align: center;
+  margin: 0 auto;
+  /* background: linear-gradient(rgb(248, 244, 189), rgb(255, 213, 74)); */
+}
+
+/* div.now_position h2 { */
+  /* padding: 20px 0; */
+  /* margin: 0 auto; */
+  /* text-align: center; */
+/* } */
+
+div.branch_information {
+  /* border: 1px solid red; */
+  /* width: 500px; */
+  width: 40%;
+  min-width: 358px;
+  display: inline-block;
+  height: 750px;
+  overflow-y: scroll;
+  transition: all 0.5s;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+}
+
+div.branch_information div#branch_taoyuan {
+  /* border: 1px solid blue; */
+  height: 1270px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+div.branch_information div#branch_taichung,
+div.branch_information div#branch_kaohsiung {
+  /* border: 1px solid red; */
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+
+
+div.shop_box {
+  /* background-color: rgb(255, 255, 255, 0.5); */
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgb(80, 80, 80);
+  padding: 10px;
+  display: inline-block;
+  top: 0;
+  left: 20%;
+  margin: 5px;
+  /* opacity: 0; */
+}
+
+div.branch_information div#branch_taoyuan div.shop_box {
+  background-color: rgba(93, 192, 192, 0.3);
+}
+
+div.branch_information div#branch_taichung div.shop_box {
+  background-color: rgba(160, 212, 119, 0.3);
+}
+
+div.branch_information div#branch_kaohsiung div.shop_box {
+  background-color: rgba(246, 129, 114, 0.3);
+}
+
+table tr td {
+  padding: 7px;
+  color: rgb(80, 80, 80);
+  text-align: start;
+}
+
+table tr td:nth-child(1) {
+  /* border: 1px solid red; */
+  vertical-align: top;
+  text-align: right;
+  width: 100px;
+}
+
+div.shop_name {
+  text-align: start;
+}
+
+div.shop_address {
+  text-align: start;
+}
+
+div.shop_address a {
+  color: rgb(80, 80, 80);
+
+}
+
+div.shop_address div.map_img img {
+  width: 100%;
+}
+
+div.shop_address div.map_img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+}
+
+div.shop_address p {
+  border-bottom: 1px solid rgb(80, 80, 80);
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+
+
+
+
+
+
+div.taiwan_map img {
+  width: 100%;
+}
+
+div.taiwan_map {
+  width: 52%;
+  /* margin-left: 5%; */
+  position: relative;
+  /* border: 1px solid red; */
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.taiwan_map_top {
+  display: none;
+  margin: 0 auto;
+}
+
+
+
+/* 各城市定位 */
+
+
+/*city5 桃園*/
+div.taiwan_map div.taiwan_map_city5 {
+  width: 13.48%;
+  /* box-shadow: 0 0 5px black; */
+  position: absolute;
+  top: 4%;
+  left: 65%;
+}
+
+div.taiwan_map div.taiwan_map_city5 div.taiwan_map_city_hover {
+  width: 130%;
+  /* box-shadow: 0 0 5px black; */
+  position: absolute;
+  top: -6%;
+  left: -17%;
+  opacity: 0;
+}
+
+div.taiwan_map div.taiwan_map_city5:hover div.taiwan_map_city_hover {
+  opacity: 1;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/*city8 台中*/
+div.taiwan_map div.taiwan_map_city8 {
+  width: 30%;
+  /* box-shadow: 0 0 5px black; */
+  position: absolute;
+  top: 22.5%;
+  left: 48.5%;
+}
+
+div.taiwan_map div.taiwan_map_city8 div.taiwan_map_city_hover {
+  width: 112%;
+  /* box-shadow: 0 0 5px black; */
+  position: absolute;
+  top: -12%;
+  left: -6.5%;
+  opacity: 0;
+}
+
+div.taiwan_map div.taiwan_map_city8:hover div.taiwan_map_city_hover {
+  opacity: 1;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/*city13 高雄*/
+div.taiwan_map div.taiwan_map_city13 {
+  width: 30%;
+  /* box-shadow: 0 0 5px black; */
+  position: absolute;
+  top: 50.3%;
+  left: 35.5%;
+}
+
+div.taiwan_map div.taiwan_map_city13 div.taiwan_map_city_hover {
+  width: 115%;
+  /* box-shadow: 0 0 5px black; */
+  position: absolute;
+  top: -5%;
+  left: -8.2%;
+  opacity: 0;
+}
+
+div.taiwan_map div.taiwan_map_city13:hover div.taiwan_map_city_hover {
+  opacity: 1;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/*全選台灣*/
+div.taiwan_map div.choose_all img {
+  width: 100%;
+}
+
+div.taiwan_map div.choose_all {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  /* opacity: 0; */
+  display: none;
+}
+
+@media screen and (max-width:1200px) {
+  main {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:991px) {
+  div.taiwan_map {
+    width: 500px;
+  }
+
+  div.taiwan_map_right {
+    display: none;
+  }
+
+  div.taiwan_map_top {
+    display: block;
+    margin-top: 5%;
+  }
+
+  div.branch_information {
+    width: 500px;
+    /* border: 1px solid red; */
+    overflow: visible;
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width:575px) {
+  div.taiwan_map_top {
+    width: 300px;
+  }
+
+  div.branch_information {
+    width: 358px;
+  }
+
+  div.branch_information div#branch_taoyuan {
+    height: 1637px;
+  }
+
+}

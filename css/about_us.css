@@ -1,0 +1,344 @@
+@import "./common/other.css";
+
+div.banner_top {
+  background-image: url(../images/about_us.jpeg);
+}
+
+main {
+  width: 1183px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main div.introduce p {
+  font-size: 20px;
+  color: rgba(110, 110, 110);
+}
+
+main div.promo_all {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/*特色*/
+div.background_center {
+  background: url(../images/affection-couple-happiness-2590612.jpg) center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+  margin-top: 5%;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  font-size: 0;
+  /* margin: 0 auto; */
+  text-align: center;
+  transition: all 0.5s;
+}
+
+div.background_center div.color {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(144deg, rgba(251, 188, 95, 0.25)35%, rgba(104, 104, 104, 0.2)60%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+div.background_center h2 {
+  color: rgb(255, 255, 255);
+
+}
+
+div.feature_all {
+  font-size: 20px;
+  display: flex;
+  /* border: 1px solid red; */
+  width: 1183px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  /* text-align: center; */
+  justify-content: space-around;
+}
+
+div.feature_all fieldset {
+  border: 1px solid rgb(255, 255, 255);
+  /* color: rgb(255,255,255); */
+  width: 28%;
+  margin: 10px;
+}
+
+div.feature_all fieldset legend {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+
+}
+
+div.feature_all fieldset legend span {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+div.feature_all fieldset p {
+  color: rgb(255, 255, 255);
+}
+
+
+/*歷史*/
+section.history {
+  /* border: 1px solid red; */
+  position: relative;
+  height: 1200px;
+  margin:10% auto;
+}
+
+section.history div.time_line {
+  /* border: 1px solid red; */
+  border-radius: 50%;
+  width: 20px;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(rgba(251, 188, 95, 1)35%, rgba(255, 220, 146, 0.8)60%);
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+/*圖片部分*/
+section.history div.room_img img {
+  width: 100%;
+}
+
+section.history div.room_img {
+  width: 15%;
+  /* border: 1px solid red; */
+  font-size: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+section.history div.room1 {
+  top: 10%;
+  right: 20%;
+}
+
+section.history div.room2 {
+  top: 33%;
+  left: 25%;
+}
+
+section.history div.room3 {
+  top: 55%;
+  right: 2%;
+}
+
+section.history div.room4 {
+  top: 85%;
+  right: 25%;
+}
+
+/*各年*/
+section.history div.case {
+  width: 35%;
+  /* border: 1px solid blue; */
+  border-radius: 10px;
+  text-align: start;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+section.history div.case div.year {
+  font-size: 20px;
+  color: rgb(110, 110, 110);
+  font-weight: bold;
+}
+
+section.history div.case p {
+  color: rgb(110, 110, 110);
+  margin-left: 3em;
+  text-indent: -2em;
+
+}
+
+/*連接線*/
+section.history div.connect_line {
+  position: absolute;
+  width: 5%;
+  height: 2px;
+  background-color: rgba(251, 188, 95, 1);
+}
+
+section.history div.left_line1 {
+  background-color: rgba(251, 188, 95, 1);
+  top: 30%;
+  right: 50%;
+}
+
+section.history div.left_line2 {
+  background-color: rgb(255, 219, 134);
+  top: 60%;
+  right: 50%;
+}
+
+section.history div.left_line3 {
+  background-color: rgba(253, 227, 139, 0.8);
+  top: 85%;
+  right: 50%;
+}
+
+section.history div.right_line1 {
+  background-color: rgb(248, 196, 117);
+  top: 45%;
+  left: 50%;
+}
+
+section.history div.right_line2 {
+  background-color: rgb(246, 228, 146);
+  top: 77%;
+  left: 50%;
+}
+
+/*個年事件定位*/
+section.history div.twelve {
+  top: 15%;
+  left: 5%;
+}
+
+section.history div.thirten {
+  right: 5%;
+  top: 30%;
+}
+
+section.history div.fouteen {
+  left: 5%;
+  top: 50%;
+}
+
+section.history div.fifteen {
+  right: 5%;
+  top: 70%;
+}
+
+section.history div.sixteen {
+  left: 5%;
+  top: 80%;
+}
+
+@media screen and (max-width:1200px) {
+  main {
+    width: 100%;
+  }
+
+
+  div.feature_all {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:991px) {
+  div.background_center {
+    height: 1900px;
+  }
+
+  div.feature_all fieldset {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:767px) {
+  section.history div.room_img {
+    width: 0;
+  }
+
+  section.history {
+    height: 1500px;
+    margin-bottom: 15%;
+  }
+
+  section.history div.time_line {
+    left: 10%;
+  }
+
+  /*個事件調整*/
+  section.history div.case {
+    width: 75%;
+  }
+
+  section.history div.twelve {
+    top: 5%;
+    left: 20%;
+  }
+
+  section.history div.thirten {
+    right: auto;
+    left: 20%;
+    top: 28%;
+  }
+
+  section.history div.fouteen {
+    left: 20%;
+    top: 55%;
+  }
+
+  section.history div.fifteen {
+    right: auto;
+    left: 20%;
+    top: 73%;
+  }
+
+  section.history div.sixteen {
+    left: 20%;
+    top: 89%;
+  }
+
+  /*連接線*/
+  section.history div.connect_line {
+    width: 7%;
+  }
+
+  section.history div.left_line1 {
+    top: 6%;
+    right: auto;
+    left: 10%
+  }
+
+  section.history div.left_line2 {
+    background-color: rgb(250, 216, 136);
+    top: 56%;
+    right: auto;
+    left: 10%
+  }
+
+  section.history div.left_line3 {
+    top: 90%;
+    right: auto;
+    left: 10%;
+  }
+
+  section.history div.right_line1 {
+    background-color: rgb(247, 188, 101);
+    top: 29%;
+    left: 10%;
+  }
+
+  section.history div.right_line2 {
+    top: 74%;
+    left: 10%;
+  }
+
+
+}
+
+
+@media screen and (max-width:575px) {
+  main div.introduce p {
+    font-size: 16px;
+  }
+  div.background_center{
+    background-attachment: scroll;
+  }
+}

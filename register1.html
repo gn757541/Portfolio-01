@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>緣 尋找另一半|註冊會員</title>
+    <link rel="stylesheet" href="./css/register1.css">
+
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./css/common/Animate.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav_bar">
+            <ul class="ul_first">
+
+                <li class="pair"><a href="./pair.html" class="a_first">
+                        <div><img src="./images/list_relationship.png" alt=""></div>配對聊天
+                    </a>
+                    <ul class="ul_second">
+                        <li><a href="./pair.html"><i>選擇對象</i></a></li>
+                        <hr>
+                        <li><a href="./pair.html"><i>聊天室</i></a></li>
+                    </ul>
+                </li>
+                <li class="practice"><a href="./practice.html" class="a_first">
+                        <div><img src="./images/list_practice.png" alt=""></div>戀愛修行
+                    </a>
+                    <ul class="ul_second">
+                        <li><a href="./practice.html"><i>課程學習</i></a></li>
+                        <hr>
+                        <li><a href="./practice.html"><i>戶外郊遊</i></a></li>
+                        <hr>
+                        <li><a href="./practice.html"><i>文青行程</i></a></li>
+                        <hr>
+                        <li><a href="./practice.html"><i>客製化</i></a></li>
+                    </ul>
+                </li>
+                <li class="logo"><a href="./index.html"><img src="./images/LOGO_FIN.png" alt=""></a></li>
+                <li class="graduation"><a href="./graduation.html">
+                        <div><img src="./images/list_diploma.png" alt=""></div>校友花絮
+                    </a></li>
+                <li class="question"><a href="./question.html">
+                        <div><img src="./images/list_question.png" alt=""></div>常見問題
+                    </a></li>
+            </ul>
+        </nav>
+
+        <nav class="mobile_nav">
+            <div class="mobile_comtent_all">
+                <div class="moblie_logo"><a href="./index.html"><img src="./images/LOGO_FIN_orange.png" alt=""></a>
+                </div>
+                <div class="right">
+                    <div class="login"><a href="./login.html">
+                            <div class="icon"><img src="./images/list_member.png" alt=""></div>
+                            登入
+                        </a></div>
+                    <div class="register"><a href="./register1.html">
+                            <div class="icon"><img src="./images/list_register.png" alt=""></div>
+                            加入我們
+                        </a></div>
+
+                    <button class="hamburger hamburger--spin" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="hamburger_menu">
+                    <ul class="ul_first">
+                        <li class="pair list_pair" id="list_pair">
+                            <div><img src="./images/list_relationship.png" alt=""></div>配對聊天 ▼
+
+                            <ul class="ul_second list_pair_item" id="list_pair_item">
+                                <li><a href="./pair.html"><i>選擇對象</i></a></li>
+                                <li><a href="./pair.html"><i>聊天室</i></a></li>
+                            </ul>
+                        </li>
+                        <li class="practice list_practice" id="list_practice">
+                            <div><img src="./images/list_practice.png" alt=""></div>戀愛修行 ▼
+                            <ul class="ul_second list_practice_item">
+                                <li><a href="./practice.html"><i>課程學習</i></a></li>
+                                <li><a href="./practice.html"><i>戶外郊遊</i></a></li>
+                                <li><a href="./practice.html"><i>文青行程</i></a></li>
+                                <li><a href="./practice.html"><i>客製化</i></a></li>
+                            </ul>
+                        </li>
+                        <li class="graduation"><a href="./graduation.html">
+                                <div><img src="./images/list_diploma.png" alt=""></div>校友花絮
+                            </a></li>
+                        <li class="question"><a href="./question.html">
+                                <div><img src="./images/list_question.png" alt=""></div>常見問題
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="fixed_right">
+        <div class="top" id="go_top">
+            <div class="icon"><img src="./images/start-up.png" alt=""></div>
+        </div>
+        <div class="right_login"><a href="./login.html">
+                <div class="icon"><img src="./images/list_member.png" alt=""></div>
+                <span>登入</span>
+            </a></div>
+        <div class="right_register"><a href="./register1.html">
+                <div class="icon"><img src="./images/list_register.png" alt=""></div><span>註冊</span>
+            </a></div>
+    </div>
+
+    <div class="banner_top"></div>
+    <div class="main_title">
+        <h1>註冊會員</h1>
+    </div>
+
+    <main>
+        <form action="">
+            <br>
+            <div class="write_title">
+                <h2>填寫基本資料</h2>
+            </div>
+            <div class="write_all">
+
+
+                <div class="write_left">
+                    <div class="item">
+                        <div class="item_title">
+                            <p class="star">姓名:</p>
+                        </div>
+                        <div class="input_bar">
+                            <input type="text" name="name" placeholder="王小名" required>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item_title">
+                            <p>暱稱:</p>
+                        </div>
+                        <div class="input_bar">
+                            <input type="text" name="nickname">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item_title">
+                            <p class="star">帳號:</p>
+                        </div>
+                        <div class="input_bar">
+                            <input type="text" name="account" placeholder="請輸入電子信箱" required>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item_title">
+                            <p class="star">密碼:</p>
+                        </div>
+                        <div class="input_bar">
+                            <input type="password" name="password" placeholder="請輸入8到20碼的英文加數字" required>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item_title">
+                            <p class="star">確認密碼:</p>
+                        </div>
+                        <div class="input_bar">
+                            <input type="password" name="password_check" placeholder="請再一次輸入密碼" required>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item_title">
+                            <p>手機:</p>
+                        </div>
+                        <div class="input_bar">
+                            <input type="text" name="phone" placeholder="0987-654-321">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item_title">
+                            <p>星座:</p>
+                        </div>
+                        <div class="input_bar">
+                            <select name="horoscope" id="">
+                                <option value="" style="display: none">請選擇星座</option>
+                                <option value="Capricorn">摩羯座</option>
+                                <option value="Aquarius">水瓶座</option>
+                                <option value="Pisces">雙魚座</option>
+                                <option value="Aries">牡羊座</option>
+                                <option value="Taurus">金牛座</option>
+                                <option value="Gemini">雙子座</option>
+                                <option value="Cancer">巨蟹座</option>
+                                <option value="Leo">獅子座</option>
+                                <option value="Virgo">處女座</option>
+                                <option value="Libra">天秤座</option>
+                                <option value="Scorpio">天蠍座</option>
+                                <option value="Sagittarius">射手座</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item_title">
+                            <p>血型:</p>
+                        </div>
+                        <div class="input_bar">
+                            <select class="blood_type" name="blood_type" id="">
+                                <option value="" style="display: none">請選擇血型</option>
+                                <option value="">A型</option>
+                                <option value="">B型</option>
+                                <option value="">AB型</option>
+                                <option value="">O型</option>
+                                <option value="">其他</option>
+                                <option value="">不知道</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item_title">
+                            <p>Line ID:</p>
+                        </div>
+                        <div class="input_bar">
+                            <input type="text" name="LineID">
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="write_right">
+                    <div class="item">
+                        <div class="item_title">
+                            <p class="star">性別:</p>
+                        </div>
+                        <div class="input_bar">
+                            <label><input type="radio" name="sex" value="woman" id="" required>女</label>
+                            <label><input type="radio" name="sex" value="woman" id="" required>男</label>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item_title">
+                            <p class="star">身高:</p>
+                        </div>
+                        <div class="input_bar">
+                            <input type="text" name="tall" placeholder="請輸入公分(cm)" required>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item_title">
+                            <p>體重:</p>
+                        </div>
+                        <div class="input_bar">
+                            <input type="text" name="weight" placeholder="請輸入公斤(kg)">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item_title">
+                            <p class="star">生日:</p>
+                        </div>
+                        <div class="input_bar">
+                            <input type="date" name="birthday" id="" required>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item_title">
+                            <p class="star">婚姻狀況:</p>
+                        </div>
+                        <div class="input_bar">
+                            <select class="marry" name="marry" id="" required>
+                                <option value="" style="display: none">請選擇婚姻狀況</option>
+                                <option value="">未婚</option>
+                                <option value="">離婚無累</option>
+                                <option value="">離婚有子</option>
+                                <option value="">喪偶無累</option>
+                                <option value="">喪偶有子</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item_title">
+                            <p>居住縣市:</p>
+                        </div>
+                        <div class="input_bar">
+                            <select name="" id="">
+                                <option value="" style="display: none">請選擇居住縣市</option>
+                                <option value="1">台北市</option>
+                                <option value="2">基隆市</option>
+                                <option value="3">新北市</option>
+                                <option value="4">宜蘭市</option>
+                                <option value="5">新竹市</option>
+                                <option value="6">新竹縣</option>
+                                <option value="7">桃園市</option>
+                                <option value="8">苗栗縣</option>
+                                <option value="9">台中市</option>
+                                <option value="10">彰化縣</option>
+                                <option value="11">南投縣</option>
+                                <option value="12">嘉義市</option>
+                                <option value="13">嘉義縣</option>
+                                <option value="14">雲林縣</option>
+                                <option value="15">台南市</option>
+                                <option value="16">高雄市</option>
+                                <option value="17">屏東縣</option>
+                                <option value="18">台東縣</option>
+                                <option value="19">花蓮縣</option>
+                                <option value="20">澎湖縣</option>
+                                <option value="21">金門縣</option>
+                                <option value="22">連江縣</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="item education">
+                        <div class="item_title">
+                            <p class="star">學歷:</p>
+                        </div>
+                        <div class="input_bar">
+                            <div class="education_radio"><label><input type="radio" name="education" value="highschool"
+                                        id="" required>高中</label></div>
+                            <div class="education_radio"><label> <input type="radio" name="education"
+                                        value="skillschool" id="" required>專科</label></div>
+                            <div class="education_radio"><label><input type="radio" name="education" value="bachelor"
+                                        id="" required>學士</label></div>
+                            <div class="education_radio"><label><input type="radio" name="education" value="master"
+                                        id="" required>碩士</label></div>
+                            <div class="education_radio"><label><input type="radio" name="education" value="doctor"
+                                        id="" required>博士</label></div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item_title">
+                            <p>學校:</p>
+                        </div>
+                        <div class="input_bar">
+                            <input type="text" name="school">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item_title">
+                            <p>科系:</p>
+                        </div>
+                        <div class="input_bar">
+                            <input type="text" name="major">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="job">
+                    <div class="item_title">
+                        <p class="star">職業:</p>
+                    </div>
+                    <div class="input_bar">
+                        <div class="job_radio"><label><input type="radio" name="job" value="" id="" required>上班族</label>
+                        </div>
+                        <div class="job_radio"><label><input type="radio" name="job" value="" id="" required>公務員</label>
+                        </div>
+                        <div class="job_radio"><label><input type="radio" name="job" value="" id="" required>教職</label>
+                        </div>
+                        <div class="job_radio"><label><input type="radio" name="job" value="" id="" required>自營</label>
+                        </div>
+                        <div class="job_radio"><label><input type="radio" name="job" value="" id=""
+                                    required>家族事業</label></div>
+                        <div class="job_radio"><label><input type="radio" name="job" value="" id="" required>製造業</label>
+                        </div>
+                        <div class="job_radio"><label><input type="radio" name="job" value="" id="" required>學生</label>
+                        </div>
+                        <div class="job_radio"><label><input type="radio" name="job" value="" id="" required>待業中</label>
+                        </div>
+                    </div>
+                    <div class="job_detail">
+                        <input type="text" name="" id="" placeholder="職業細項說明">
+                    </div>
+                </div>
+
+                <hr class="hr">
+
+                <div class="checkbox_all">
+                    <div>請選擇性格
+                        <ul class="personality">
+                            <li><label><input type="checkbox" name="" id="">內向</label></li>
+                            <li><label><input type="checkbox" name="" id="">外向</label></li>
+                            <li><label><input type="checkbox" name="" id="">務實</label></li>
+                            <li><label><input type="checkbox" name="" id="">浪漫</label></li>
+                            <li><label><input type="checkbox" name="" id="">獨立</label></li>
+                            <li><label><input type="checkbox" name="" id="">依賴</label></li><br>
+                            <input type="text" placeholder="其他性格" class="other_personality">
+                        </ul>
+
+                    </div>
+
+                    <div>請選擇興趣</div>
+                    <ul class="intrest">
+                        <li><label><input type="checkbox" name="" id="">看影劇</label></li>
+                        <li><label><input type="checkbox" name="" id="">看動畫</label></li>
+                        <li><label><input type="checkbox" name="" id="">聽音樂</label></li>
+                        <li><label><input type="checkbox" name="" id="">唱歌</label></li>
+                        <li><label><input type="checkbox" name="" id="">美食</label></li>
+                        <li><label><input type="checkbox" name="" id="">旅遊</label></li>
+                        <li><label><input type="checkbox" name="" id="">運動</label></li>
+                        <li><label><input type="checkbox" name="" id="">看書</label></li>
+                        <li><label><input type="checkbox" name="" id="">上網</label></li>
+                        <li><label><input type="checkbox" name="" id="">戶外走走</label></li>
+                        <li><label><input type="checkbox" name="" id="">室內休閒</label></li><br>
+                        <input type="text" placeholder="其他興趣">
+                    </ul>
+
+                    <div>請選擇專長</div>
+                    <ul class="expertise">
+                        <li><label><input type="checkbox" name="" id="">繪畫</label></li>
+                        <li><label><input type="checkbox" name="" id="">書法</label></li>
+                        <li><label><input type="checkbox" name="" id="">語言</label></li>
+                        <li><label><input type="checkbox" name="" id="">理財</label></li>
+                        <li><label><input type="checkbox" name="" id="">文書</label></li>
+                        <li><label><input type="checkbox" name="" id="">運動</label></li>
+                        <li><label><input type="checkbox" name="" id="">網路</label></li>
+                        <li><label><input type="checkbox" name="" id="">管理</label></li><br>
+                        <input type="text" placeholder="其他專長">
+                    </ul>
+                </div>
+
+                <hr class="hr">
+
+                <div class="key_in">
+                    <div class="introduction">
+                        <div>
+                            <p class="star">簡短自我介紹:</p>
+                        </div>
+                        <textarea name="introduction" id="" class="introduction_area" required></textarea>
+                    </div>
+
+                    <div class="hope">
+                        <div>
+                            <p class="star">希望對象:</p>
+                        </div>
+                        <textarea name="hope" id="" class="hope_area" required></textarea>
+                    </div>
+                </div>
+
+
+                <div class="end_buttons">
+                    <a href="./register2.html"><input type="button" value="下一步" class="level_one_button"></a><br>
+                    <div class="give_up"><a href="./index.html">放棄填寫</a></div>
+                </div>
+    </main>
+
+
+    <footer>
+        <div class="background_color_footer"></div>
+        <div class="footer_img"><img src="./images/1-4cut.png" alt=""></div>
+        <div class="logo logo_mobile"><img src="./images/LOGO_FIN.png" alt=""></div>
+        <div class="footer_content">
+            <div class="left">
+                <div class="contact">聯絡方式</div>
+                <div class="tel">TEL:03-425-7389</div>
+                <div class="fax">FAX:02-2737-7119</div>
+                <div class="address">320桃園市中壢區中大路300號</div>
+            </div>
+            <div class="right">
+
+                <div class="about_us"><span><a href="./about_us.html">關於我們</a></span></div>
+                <div class="branch"><span><a href="./branch.html">服務據點</a></span></div>
+            </div>
+            <div class="logo logo_computer"><img src="./images/LOGO_FIN.png" alt=""></div>
+        </div>
+        <div class="copyright">©2019 All Rights Reserved By TZU-YU,CHEN</div>
+    </footer>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        var wow = new WOW({
+            boxClass: 'wow', // 要套用WOW.js縮需要的動畫class(預設是wow)
+            animateClass: 'animated', // 要"動起來"的動畫(預設是animated, 因此如果你有其他動畫library要使用也可以在這裡調整)
+            offset: 0, // 距離顯示多遠開始顯示動畫 (預設是0, 因此捲動到顯示時才出現動畫)
+            mobile: true, // 手機上是否要套用動畫 (預設是true)
+            live: true, // 非同步產生的內容是否也要套用 (預設是true, 非常適合搭配SPA)
+            callback: function (box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                // 當每個要開始時, 呼叫這裡面的內容, 參數是要開始進行動畫特效的element DOM
+            },
+        });
+        wow.init();
+    </script>
+
+    <script>
+        var header_active = function () {
+            // 取得使用者滑了多少 px
+            var scroll_top = $(window).scrollTop();
+            // 將 scroll_top 數值放到 p.-pos 內容
+            $("p.-pos").html(scroll_top);
+
+            if (scroll_top >= 200) {
+                $("div.fixed_right").addClass("-on");
+            } else {
+                $("div.fixed_right").removeClass("-on");
+            }
+        };
+        $(function () {
+            // 第三步：偵測頁面滑動時會觸發
+            $(window).scroll(function () {
+                header_active();
+            });
+        });
+    </script>
+
+
+    <script>
+        //go_top btn
+        // DOM 載入完成後執行
+        $(function () {
+
+            // 點擊按鈕，頁面滑到最上方
+            $("#go_top").on("click", function (e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 750);
+            });
+
+        });
+    </script>
+
+    <script src="./js/common/hamburger.js"></script>
+    <script>
+        $(function () {
+            // hamburger icon 的切換
+            $("button.hamburger").on("click", function () {
+                $(this).toggleClass("is-active");
+            });
+        });
+    </script>
+</body>
+
+</html>

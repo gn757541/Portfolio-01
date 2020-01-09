@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>緣 尋找另一半</title>
+    <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./css/common/Animate.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav_bar">
+            <ul class="ul_first">
+
+                <li class="pair"><a href="./pair.html" class="a_first">
+                        <div><img src="./images/list_relationship.png" alt=""></div>配對聊天
+                    </a>
+                    <ul class="ul_second">
+                        <li><a href="./pair.html"><i>選擇對象</i></a></li>
+                        <hr>
+                        <li><a href="./pair.html"><i>聊天室</i></a></li>
+                    </ul>
+                </li>
+                <li class="practice"><a href="./practice.html" class="a_first">
+                        <div><img src="./images/list_practice.png" alt=""></div>戀愛修行
+                    </a>
+                    <ul class="ul_second">
+                        <li><a href="./practice.html"><i>課程學習</i></a></li>
+                        <hr>
+                        <li><a href="./practice.html"><i>戶外郊遊</i></a></li>
+                        <hr>
+                        <li><a href="./practice.html"><i>文青行程</i></a></li>
+                        <hr>
+                        <li><a href="./practice.html"><i>客製化</i></a></li>
+                    </ul>
+                </li>
+                <li class="logo"><a href="./index.html"><img src="./images/LOGO_FIN.png" alt=""></a></li>
+                <li class="graduation"><a href="./graduation.html">
+                        <div><img src="./images/list_diploma.png" alt=""></div>校友花絮
+                    </a></li>
+                <li class="question"><a href="./question.html">
+                        <div><img src="./images/list_question.png" alt=""></div>常見問題
+                    </a></li>
+            </ul>
+        </nav>
+
+        <nav class="mobile_nav">
+            <div class="mobile_comtent_all">
+                <div class="moblie_logo"><a href="./index.html"><img src="./images/LOGO_FIN_orange.png" alt=""></a>
+                </div>
+                <div class="right">
+                    <div class="login"><a href="./login.html">
+                            <div class="icon"><img src="./images/list_member.png" alt=""></div>
+                            登入
+                        </a></div>
+                    <div class="register"><a href="./register1.html">
+                            <div class="icon"><img src="./images/list_register.png" alt=""></div>
+                            加入我們
+                        </a></div>
+
+                    <button class="hamburger hamburger--spin" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="hamburger_menu">
+                    <ul class="ul_first">
+                        <li class="pair list_pair" id="list_pair">
+                            <div><img src="./images/list_relationship.png" alt=""></div>配對聊天 ▼
+
+                            <ul class="ul_second list_pair_item" id="list_pair_item">
+                                <li><a href="./pair.html"><i>選擇對象</i></a></li>
+                                <li><a href="./pair.html"><i>聊天室</i></a></li>
+                            </ul>
+                        </li>
+                        <li class="practice list_practice" id="list_practice">
+                            <div><img src="./images/list_practice.png" alt=""></div>戀愛修行 ▼
+                            <ul class="ul_second list_practice_item">
+                                <li><a href="./practice.html"><i>課程學習</i></a></li>
+                                <li><a href="./practice.html"><i>戶外郊遊</i></a></li>
+                                <li><a href="./practice.html"><i>文青行程</i></a></li>
+                                <li><a href="./practice.html"><i>客製化</i></a></li>
+                            </ul>
+                        </li>
+                        <li class="graduation"><a href="./graduation.html">
+                                <div><img src="./images/list_diploma.png" alt=""></div>校友花絮
+                            </a></li>
+                        <li class="question"><a href="./question.html">
+                                <div><img src="./images/list_question.png" alt=""></div>常見問題
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="fixed_right">
+        <div class="top" id="go_top">
+            <div class="icon"><img src="./images/start-up.png" alt=""></div>
+        </div>
+        <div class="right_login"><a href="./login.html">
+                <div class="icon"><img src="./images/list_member.png" alt=""></div>
+                <span>登入</span>
+            </a></div>
+        <div class="right_register"><a href="./register1.html">
+                <div class="icon"><img src="./images/list_register.png" alt=""></div><span>註冊</span>
+            </a></div>
+    </div>
+
+    <section class="top">
+        <div class="background_color"></div>
+        <div class="banner wow rotateInDownRight" data-wow-duration="1s" data-wow-delay="0s"></div>
+        <div class="circle_bg1"></div>
+        <div class="circle_bg2"></div>
+        <div class="circle_bg3"></div>
+        <div class="circle_bg4"></div>
+        <div class="circle_bg5"></div>
+        <div class="login"><a href="./login.html">
+                <span class="hover_white"></span>
+                <div class="icon"><img src="./images/list_member.png" alt=""></div>
+                <h3>登入</h3>
+            </a></div>
+        <div class="register"><a href="./register1.html">
+                <span class="hover_white"></span>
+                <div class="icon"><img src="./images/list_register.png" alt=""></div>
+                <h3>註冊</h3>
+            </a></div>
+    </section>
+
+    <section class="waiting">
+        <div class="background1"></div>
+        <h1>待配對會員</h1>
+
+        <a href="./login.html">
+            <div class="woman1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s"><img
+                    src="./images/adult-alluring-attractive-2931198.jpg" alt="">
+                <div class="woman1_hover"><img src="./images/woman1_hover.jpg" alt=""></div>
+                <div class="woman1_hover_people"><img src="./images/woman1_hover_people.png" alt=""></div>
+
+                <div class="information w1_data1">
+                    <div class="person_content">
+                        <div><span class="age">27歲</span>
+                        </div>
+                        <div class="have_icon">
+                            <div class="job"><span>旅遊業者</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="./login.html">
+            <div class="man1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s"><img
+                    src="./images/bonnet-casual-close-up-2923820.jpg" alt="">
+                <div class="man1_hover"><img src="./images/man1_hover.jpg" alt=""></div>
+                <div class="man1_hover_people"><img src="./images/man1_hover_people.png" alt=""></div>
+
+                <div class="information m1_data1">
+                    <div class="person_content">
+                        <div><span class="age">27歲</span>
+                        </div>
+                        <div class="have_icon">
+                            <div class="job"><span>前端工程師</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+
+        <a href="./login.html">
+            <div class="woman2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s"><img
+                    src="./images/beautiful-beauty-blurred-background-1391498.jpg" alt="">
+                <div class="woman2_hover"><img src="./images/woman2_hover.jpg" alt=""></div>
+                <div class="woman2_hover_people"><img src="./images/woman2_hover_people.png" alt=""></div>
+
+                <div class="information w2_data2">
+                    <div class="person_content">
+                        <div><span class="age">27歲</span>
+                        </div>
+                        <div class="have_icon">
+                            <div class="job"><span>前端工程師</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <div class="background2"></div>
+
+        <a href="./login.html">
+            <div class="woman3 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s"> <img
+                    src="./images/beautiful-bloom-blossom-1406766.jpg" alt="">
+                <div class="woman3_hover"><img src="./images/woman3_hover.jpg" alt=""></div>
+                <div class="woman3_hover_people"><img src="./images/woman3_hover_people.png" alt=""></div>
+
+                <div class="information w3_data3">
+                    <div class="person_content">
+                        <div><span class="age">27歲</span>
+                        </div>
+                        <div class="have_icon">
+                            <div class="job"><span>前端工程師</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </a>
+
+
+        <a href="./login.html">
+            <div class="man2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s"><img
+                    src="./images/adult-architecture-building-2917117.jpg" alt="">
+
+                <div class="man2_hover"><img src="./images/man2_hover.jpg" alt=""></div>
+                <div class="man2_hover_people"><img src="./images/man2_hover_people.png" alt=""></div>
+
+                <div class="information m2_data2">
+                    <div class="person_content">
+                        <div><span class="age">27歲</span>
+                        </div>
+                        <div class="have_icon">
+                            <div class="job"><span>前端工程師</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </a>
+
+
+        <a href="./login.html">
+            <div class="man3 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s"><img
+                    src="./images/adult-attractive-blur-2904116.jpg" alt="">
+                <div class="man3_hover"><img src="./images/man3_hover.jpg" alt=""></div>
+                <div class="man3_hover_people"><img src="./images/man3_hover_people.png" alt=""></div>
+
+                <div class="information m3_data3">
+                    <div class="person_content">
+                        <div><span class="age">27歲</span>
+                        </div>
+                        <div class="have_icon">
+                            <div class="job"><span>職業模特兒</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="" class="more_member">更多會員</a>
+    </section>
+
+    <section class="Operation">
+        <h1>我們提供您</h1>
+        <div class="background_operation">
+
+
+            <div class="provide_all">
+                <a href="">
+                    <div class="provide provide1 box">
+                        <span></span>
+                        <div class="provide_content">
+                            <h3>個人形象改造</h3>
+                            <p>形象/愛情顧問為您內外改造，<br>
+                                改造更棒的你！</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="provide provide2">
+                        <span></span>
+                        <div class="provide_content">
+                            <h3>把關交友安全</h3>
+                            <p> 每個單身會員，我們將核對資料，<br>
+                                實名驗證。</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="provide provide3">
+                        <span></span>
+                        <div class="provide_content">
+                            <h3>互動式聯誼活動</h3>
+                            <p> 戶外活動、節慶特別企劃，<br>
+                                甩掉單身寂寞生活。</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="provide provide4">
+                        <span></span>
+                        <div class="provide_content">
+                            <h3>客製戀愛諮詢服務</h3>
+                            <p>線上交友結合線下顧問服務，<br>
+                                約會、相親無往不利</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="video_section">
+        <div class="video_all">
+            <div class="video_left">
+                <div class="icon"><img src="./images/video-camera.png" alt=""></div>
+                <h2>珍愛影片</h2>
+                <p>跟我約會吧 - 幸福的起點</p>
+            </div>
+            <div class="video_right"><video width="500" controls controlsList="nodownload"
+                    poster="./images/video_img.jpg">
+                    <source src="./images/videoplayback.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="vider_color_right"></div>
+        </div>
+    </section>
+
+    <section class="introduction">
+        <div class="first">
+            <div class="first_left">
+                <span><i>爲什麽您要選擇緣</i></span>
+                <h2>與您的理想對象相遇</h2>
+            </div>
+            <div class="first_right">
+                <div class="small_title">
+                    <div class="icon"><img src="./images/worker.png" alt=""></div>
+                    <h3>尋覓您特別的那一位!</h3>
+                </div>
+                <p>基於緣交友科學的性格評估結果，我們將僅向您推薦真正適合的伴侶。您的性格測試結果,對理想伴侶的分析描述,以及我們為您推薦的配對都是無償免費的。</p>
+                <div class="small_title">
+                    <div class="icon"><img src="./images/lock.png" alt=""></div>
+                    <h3>保護您的個人隱私</h3>
+                </div>
+                <p>我們確保您的個人資料以及您同配對的交流不會對外洩漏。此外，只有您可以決定誰有權預覽你的照片。</p>
+            </div>
+        </div>
+
+        <div class="second">
+            <div class="second_left">
+                <span><i>以科學為依據的個性測試</i></span>
+                <h2>個性化的婚戀配對服務成效顯著</h2>
+                <p>在緣中，圖象和表現都是同步邁進的。其優點是創新的應用程序，科學的個性測試以及認真為您推薦與您個性相配的對象。</p>
+                <p>我們的問卷會對您的態度，意見，意願和期望進行研究和分析，而系統會以您的個人分析結果作為基礎，在您指定或一般地區為您配對出及搜索出合適您的對象。</p>
+                <a href="./register1.html"><input type="button" class="level_one_button join_us_btn"
+                        value="趕快加入我們吧"></a>
+            </div>
+            <div class="second_right">
+                <div class="service_img"><img src="./images/service.jpeg" alt=""></div>
+            </div>
+        </div>
+
+        <div class="third">
+            <div class="third_left third_left_computer">
+                <div class="support_img"><img src="./images/support.jpg" alt=""></div>
+            </div>
+            <div class="third_right">
+                <span><i>感興趣嗎?</i></span>
+                <h2>免費試用緣</h2>
+                <p>有興趣加入緣交友? 請即在網站註冊或下載我們的應用程式 – 開始您的交友旅程！我們的優勢: 參與我們的個性測試和獲得配對名單都是完全免費的！通過我們的配對平台您可以在台灣尋找到與您相襯的心儀的對象!
+                </p>
+                <p>在您免費完成註冊及建立個人檔案後 (完全不用收費及可保持匿名), 您將獲得一份由我們為您推薦的配對列表 - 這代表您在尋找理想對象的目標又邁進一大步了! 在註冊後您可以搜索,
+                    查看以及聯絡其他在台灣的單身朋友。在您訂購了我們的高級會藉後, 您可以搜索，查看以及聯絡其他台灣單身會員。交友約會，查看照片和聊天功能都只限於高級會員！</p>
+            </div>
+            <div class="third_left third_left_mobile">
+                <div class="support_img"><img src="./images/support.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="background_color_footer"></div>
+        <div class="footer_img"><img src="./images/1-4cut.png" alt=""></div>
+        <div class="logo logo_mobile"><img src="./images/LOGO_FIN.png" alt=""></div>
+        <div class="footer_content">
+            <div class="left">
+                <div class="contact">聯絡方式</div>
+                <div class="tel">TEL:03-425-7389</div>
+                <div class="fax">FAX:02-2737-7119</div>
+                <div class="address">320桃園市中壢區中大路300號</div>
+            </div>
+            <div class="right">
+
+                <div class="about_us"><span><a href="./about_us.html">關於我們</a></span></div>
+                <div class="branch"><span><a href="./branch.html">服務據點</a></span></div>
+            </div>
+            <div class="logo logo_computer"><img src="./images/LOGO_FIN.png" alt=""></div>
+        </div>
+        <div class="copyright">©2019 All Rights Reserved By TZU-YU,CHEN</div>
+    </footer>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        var wow = new WOW({
+            boxClass: 'wow', // 要套用WOW.js縮需要的動畫class(預設是wow)
+            animateClass: 'animated', // 要"動起來"的動畫(預設是animated, 因此如果你有其他動畫library要使用也可以在這裡調整)
+            offset: 0, // 距離顯示多遠開始顯示動畫 (預設是0, 因此捲動到顯示時才出現動畫)
+            mobile: true, // 手機上是否要套用動畫 (預設是true)
+            live: true, // 非同步產生的內容是否也要套用 (預設是true, 非常適合搭配SPA)
+            callback: function (box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                // 當每個要開始時, 呼叫這裡面的內容, 參數是要開始進行動畫特效的element DOM
+            },
+        });
+        wow.init();
+    </script>
+
+    <script>
+        var header_active = function () {
+            // 取得使用者滑了多少 px
+            var scroll_top = $(window).scrollTop();
+            // 將 scroll_top 數值放到 p.-pos 內容
+            $("p.-pos").html(scroll_top);
+
+            if (scroll_top >= 200) {
+                $("div.fixed_right").addClass("-on");
+            } else {
+                $("div.fixed_right").removeClass("-on");
+            }
+        };
+        $(function () {
+            // 第三步：偵測頁面滑動時會觸發
+            $(window).scroll(function () {
+                header_active();
+            });
+        });
+    </script>
+
+
+    <script>
+        //go_top btn
+        // DOM 載入完成後執行
+        $(function () {
+
+            // 點擊按鈕，頁面滑到最上方
+            $("#go_top").on("click", function (e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 750);
+            });
+
+        });
+    </script>
+
+    <script src="./js/common/hamburger.js"></script>
+    <script>
+        $(function () {
+            // hamburger icon 的切換
+            $("button.hamburger").on("click", function () {
+                $(this).toggleClass("is-active");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

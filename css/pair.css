@@ -1,0 +1,643 @@
+@import "./common/other.css";
+
+div.banner_top {
+    background-image: url(../images/pair.jpg);
+    margin-bottom: 5%;
+}
+
+main {
+    width: 1183px;
+    margin: 0 auto;
+}
+
+section {
+    /* border: 1px solid red; */
+    font-size: 0;
+}
+
+/*擇偶條件*/
+section.choose_person div.condition_all {
+    margin: 0 15px;
+    /* padding: 15px; */
+    /* border: 10px solid rgba(182, 182, 182, 0.6); */
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 15px;
+
+}
+
+section.choose_person div.condition_all div.condition_title {
+    font-size: 16px;
+    color: rgb(110, 110, 110);
+}
+
+section.choose_person div.condition_all div.condition_input {
+    font-size: 16px;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    flex-wrap: wrap;
+
+}
+
+section.choose_person div.condition_all div.condition_input div.choose_item {
+    /* border: 1px solid blue; */
+    display: inline-block;
+}
+
+section.choose_person div.condition_all div.condition_checkbox {
+    /* border: 1px solid blue; */
+    font-size: 16px;
+    /* margin: 0 auto; */
+    text-align: center;
+}
+
+section.choose_person div.condition_all div.condition_checkbox div.condition_checkbox_item {
+    /* border: 1px solid blue; */
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+section.choose_person div.condition_all div.condition_checkbox div.condition_personality {
+    width: 230px;
+    background-color: rgba(119, 189, 255, 0.4)
+}
+
+section.choose_person div.condition_all div.condition_checkbox div.condition_intrest {
+    width: 440px;
+    background-color: rgba(255, 119, 153, 0.4)
+}
+
+section.choose_person div.condition_all div.condition_checkbox div.condition_checkbox_title {
+    display: block;
+    /* border: 1px solid blue; */
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+section.choose_person div.condition_all div.condition_checkbox div.item_all {
+    /* border: 1px solid red; */
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+section.choose_person div.condition_all div.condition_checkbox ul {
+    padding: 0;
+    margin: 0 auto;
+}
+
+section.choose_person div.condition_all div.condition_checkbox ul li {
+    list-style: none;
+    /* border: 1px solid blue; */
+    display: inline-block;
+    width: 100px;
+}
+
+section.choose_person div.condition_all div.condition_checkbox ul.intrest {
+    text-align: start;
+}
+
+section.choose_person div.condition_all div.search_button {
+    margin: 15px auto;
+    text-align: center;
+}
+
+
+
+/*選人*/
+section.choose_person2,
+section.detail,
+section.chatroom {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    /* border: 1px solid blue; */
+}
+
+
+div.choose_person_bar {
+    /* border: 1px solid blue; */
+    margin: 15px auto;
+    text-align: center;
+    font-size: 0;
+}
+
+/*箭頭部分*/
+div.choose_person_bar div.arrow img {
+    width: 100%;
+}
+
+div.choose_person_bar div.arrow {
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    /* border: 1px solid blue; */
+}
+
+div.choose_person_bar div.arrow:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*選人部分*/
+div.choose_person_bar div.person img {
+    width: 100%;
+}
+
+div.choose_person_bar div.person {
+    /* border: 1px solid red; */
+    /* width: 15%; */
+    width: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+}
+
+div.choose_person_bar div.person img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+div.choose_person_bar div.person_all {
+    /* border: 1px solid red; */
+    display: inline-block;
+    /* width: 80%; */
+    width: 950px;
+    height: 195px;
+    margin: 0 auto;
+    white-space: nowrap;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+}
+
+div.choose_person_bar div.person_all div.wrap {
+    /* border: 1px solid blue; */
+    position: absolute;
+    transition: all 0.5s;
+    left: -380px;
+}
+
+
+
+/*想了解之後*/
+
+section.detail {
+    text-align: center;
+}
+
+section div.line {
+    width: 2px;
+    padding-top: 10%;
+    background-color: rgb(170, 170, 170);
+    /* border: 1px solid blue; */
+    margin: 0 auto;
+}
+
+section.detail div.detail_all {
+    /* border: 20px solid rgba(255, 139, 139, 0.3); */
+    position: relative;
+    padding-top: 15px;
+    border-radius: 10px;
+    /* background-color: rgba(255, 139, 139, 0.3); */
+    box-sizing: border-box;
+    z-index: -2;
+}
+
+/*圖片部分*/
+section.detail div.detail_all div.chose_img img {
+    width: 100%;
+}
+
+
+section.detail div.detail_all div.chose_img {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px rgba(110, 110, 110, 0.5);
+    display: inline-block;
+    vertical-align: middle;
+    /* 我是長男，只要也命令我的話，我可以帶弟弟憶起去中間喔 */
+}
+
+/*性別符號*/
+section.detail div.detail_all div.sex_img img {
+    width: 100%;
+}
+
+section.detail div.detail_all div.sex_img {
+    width: 30%;
+    display: inline-block;
+    position: absolute;
+    filter: opacity(0.5);
+    /* transform: rotate(45deg); */
+    right: 5%;
+    top: 5%;
+    z-index: -1;
+}
+
+
+/*資訊部分*/
+
+section.detail div.detail_all div.information {
+    /* border: 1px solid blue; */
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 15px;
+    margin: 0 15px;
+    /* 我是次男，性格牆頭草，單獨命令我的話我只能居上或居下，拒絕站中間>____< */
+    /* 如果我的好兄弟/姊妹願意陪我的話，站中間也不是不可以唷(。-`ω´-)  */
+    text-align: left;
+    border-radius: 10px;
+    width: 50%;
+    background-color: rgba(252, 232, 197, 0.7);
+    box-shadow: 3px 3px 3px rgba(110, 110, 110, 0.5);
+}
+
+section.detail div.detail_all div.information div.person_content img {
+    width: 100%;
+}
+
+section.detail div.detail_all div.information div.person_content div.horoscope_img,
+section.detail div.detail_all div.information div.person_content div.job_img,
+section.detail div.detail_all div.information div.person_content div.gradution_img,
+section.detail div.detail_all div.information div.person_content div.address_img {
+    display: inline-block;
+    width: 40px;
+    vertical-align: middle;
+    /* border: 1px solid red; */
+}
+
+section.detail div.detail_all div.information div.person_content div.first_row {
+    padding: 10px;
+    /* border: 1px solid red;    */
+}
+
+section.detail div.detail_all div.information div.person_content div.first_row span.age,
+section.detail div.detail_all div.information div.person_content div.first_row span.name {
+    padding: 0 10px;
+}
+
+section.detail div.detail_all div.information div.person_content div.first_row span.name {
+    font-size: 24px;
+}
+
+section.detail div.detail_all div.information div.person_content div.have_icon {
+    font-size: 0;
+}
+
+section.detail div.detail_all div.information div.have_icon div {
+    display: inline-block;
+    /* border: 1px solid blue; */
+    box-sizing: border-box;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+section.detail div.detail_all div.information div.have_icon div.job,
+section.detail div.detail_all div.information div.have_icon div.graduation {
+    width: 65%;
+}
+
+section.detail div.detail_all div.information div.have_icon div.horoscope,
+section.detail div.detail_all div.information div.have_icon div.address {
+    width: 35%;
+}
+
+section.detail div.detail_all div.information div.person_content div.height,
+section.detail div.detail_all div.information div.person_content div.marry {
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+}
+
+section.detail div.detail_all div.information div.person_content div.content {
+    /* border: 5px solid white; */
+    padding: 15px;
+    background-color: rgb(255, 255, 255, 0.5);
+    box-shadow: 3px 3px 3px rgba(110, 110, 110, 0.5);
+    border-radius: 5px;
+}
+
+section.detail div.pair_button {
+    margin: 15px;
+}
+
+
+
+
+/*聊天室*/
+section.chatroom {
+    font-size: 0;
+}
+
+section.chatroom img {
+    width: 100%;
+}
+
+section.chatroom div.chatroom_all {
+    text-align: center;
+    box-shadow: 3px 3px 3px rgba(110, 110, 110, 0.5);
+    border-radius: 10px;
+    border: 1px solid rgba(110, 110, 110, 0.5);
+    padding-top: 15px;
+    width: calc(100% - 6px);
+}
+
+section.chatroom div.chatroom_all div.head_shot {
+    width: 250px;
+    /* border: 1px solid blue; */
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+}
+
+section.chatroom div.chatroom_all span.name {
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid blue; */
+    background-color: rgba(255, 255, 255, 0.7);
+    padding-top: 10px;
+}
+
+/*聊天室窗*/
+section.chatroom div.chatroom_all div.chatroom_window {
+    /* border: 1px solid blue; */
+    border-radius: 10px 10px 0 0;
+    background-color: rgba(253, 255, 138, 0.5);
+    margin-top: 1%;
+}
+
+section.chatroom div.chatroom_all div.chatroom_window div.dialog {
+    font-size: 16px;
+    padding: 15px;
+}
+
+/* section.chatroom div.chatroom_all div.chatroom_window div.dialog div.dialog_detail {
+    border: 1px solid blue;
+} */
+
+section.chatroom div.chatroom_all div.chatroom_window div.dialog div.dialog_detail p {
+    padding: 15px;
+    margin: 0;
+    /* border: 1px solid red; */
+    display: inline-block;
+    max-width: 60%;
+}
+
+section.chatroom div.chatroom_all div.chatroom_window div.dialog div.dialog1 {
+    text-align: start;
+}
+
+section.chatroom div.chatroom_all div.chatroom_window div.dialog div.dialog2 {
+    text-align: end;
+}
+
+section.chatroom div.chatroom_all div.chatroom_window div.dialog div.dialog1 p {
+    background-color: rgb(245, 165, 74);
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(110, 110, 110, 0.5);
+    color: rgb(255, 255, 255);
+}
+
+section.chatroom div.chatroom_all div.chatroom_window div.dialog div.dialog2 p {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(110, 110, 110, 0.5);
+    color: rgb(245, 165, 74);
+    text-align: start;
+}
+
+
+/*輸入區*/
+/*上排按鈕部分*/
+
+div.chatroom_all div.input_window div.push_bar div div {
+    width: 50px;
+    /* border: 1px solid blue; */
+    display: inline-block;
+    padding: 2px;
+    margin: 0 5px;
+    transition: all 0.1s;
+}
+
+div.chatroom_all div.input_window div.push_bar div div:hover {
+    box-shadow: 3px 3px 3px rgba(110, 110, 110, 0.5);
+    cursor: pointer;
+}
+
+div.chatroom_all div.input_window div.push_bar div.left,
+div.chatroom_all div.input_window div.push_bar div.right {
+    /* border: 1px solid blue; */
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgb(255, 178, 91);
+    border-bottom: 1px solid rgb(255, 178, 91);
+    padding: 5px
+}
+
+div.chatroom_all div.input_window div.push_bar div.left {
+    text-align: start;
+    width: 70%;
+    border-left: 1px solid rgb(255, 178, 91);
+
+}
+
+div.chatroom_all div.input_window div.push_bar div.right {
+    text-align: end;
+    width: 30%;
+    border-right: 1px solid rgb(255, 178, 91);
+}
+
+/*輸入框*/
+div.chatroom_all div.input_window div.input_bar textarea {
+    width: 100%;
+    /* padding: 15px; */
+    border-radius: 0 0 10px 10px;
+}
+
+/*封鎖*/
+div.block_button {
+    text-align: center;
+    margin: 15px;
+}
+
+div.block_button input {
+    border: none;
+    background: linear-gradient(rgb(130, 130, 130), rgb(50, 50, 50));
+    color: white;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+div.block_button input:hover {
+    background: white;
+    color: rgb(80, 80, 80);
+    border: 1px solid rgb(80, 80, 80);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+/*燈箱*/
+div#block_lightbox {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(110, 110, 110, 0.5);
+    /* border: 1px solid red; */
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: -10;
+}
+
+div#block_lightbox div.lightbox_content_all {
+    width: 300px;
+    height: 200px;
+    /* border: 1px solid red; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+div#block_lightbox div.lightbox_content_all div.lightbox_content {
+    /* border: 1px solid blue; */
+    /* padding: 15px; */
+    margin: 15px auto;
+}
+
+div#block_lightbox div.lightbox_content_all div.lightbox_content div.sad_img img {
+    width: 100%;
+}
+
+div#block_lightbox div.lightbox_content_all div.lightbox_content div.sad_img {
+    width: 50px;
+    margin: 15px auto;
+}
+
+div#block_lightbox div.lightbox_content_all input.back_btn {
+    display: inline-block;
+    height: auto;
+    padding: 10px 0px;
+    margin: 5px;
+}
+
+
+div#block_lightbox div.lightbox_content_all input.block_corect {
+    border: none;
+    display: inline-block;
+    background: linear-gradient(rgb(130, 130, 130), rgb(50, 50, 50));
+    color: white;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+div#block_lightbox div.lightbox_content_all input.block_corect:hover {
+    background: white;
+    color: rgb(80, 80, 80);
+    border: 1px solid rgb(80, 80, 80);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:1199px) {
+    main {
+        width: 95%;
+    }
+
+    div.choose_person_bar div.person_all {
+        width: 570px;
+    }
+
+    div.choose_person_bar div.person_all div.wrap {
+        left: -570px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    section.detail div.detail_all div.chose_img {
+        height: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    section.detail div.detail_all div.information {
+        width: 85%;
+        margin-top: 10px;
+    }
+
+    section.detail div.detail_all div.sex_img {
+        top: 40%;
+        right: 0;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    section.choose_person div.condition_all div.condition_input {
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
+
+
+
+    section.choose_person div.condition_all div.condition_checkbox div.condition_personality,
+    section.choose_person div.condition_all div.condition_checkbox div.condition_intrest {
+        width: 90%;
+    }
+
+
+    section.choose_person div.condition_all div.condition_input div.choose_item {
+        box-sizing: border-box;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    div.choose_person_bar div.person_all {
+        width: 190px;
+        /* width: 570px; */
+    }
+
+    div.choose_person_bar div.person_all div.wrap {
+        left: -760px;
+    }
+
+    /*輸入區上排按鍵*/
+    div.chatroom_all div.input_window div.push_bar div div {
+        width: 30px;
+    }
+
+
+
+}

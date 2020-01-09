@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>緣 尋找另一半|配對聊天</title>
+    <link rel="stylesheet" href="./css/pair.css">
+
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./css/common/Animate.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav_bar">
+            <ul class="ul_first">
+
+                <li class="pair"><a href="./pair.html" class="a_first">
+                        <div><img src="./images/list_relationship.png" alt=""></div>配對聊天
+                    </a>
+                    <ul class="ul_second">
+                        <li><a href="./pair.html"><i>選擇對象</i></a></li>
+                        <hr>
+                        <li><a href="./pair.html"><i>聊天室</i></a></li>
+                    </ul>
+                </li>
+                <li class="practice"><a href="./practice.html" class="a_first">
+                        <div><img src="./images/list_practice.png" alt=""></div>戀愛修行
+                    </a>
+                    <ul class="ul_second">
+                        <li><a href="./practice.html"><i>課程學習</i></a></li>
+                        <hr>
+                        <li><a href="./practice.html"><i>戶外郊遊</i></a></li>
+                        <hr>
+                        <li><a href="./practice.html"><i>文青行程</i></a></li>
+                        <hr>
+                        <li><a href="./practice.html"><i>客製化</i></a></li>
+                    </ul>
+                </li>
+                <li class="logo"><a href="./index.html"><img src="./images/LOGO_FIN.png" alt=""></a></li>
+                <li class="graduation"><a href="./graduation.html">
+                        <div><img src="./images/list_diploma.png" alt=""></div>校友花絮
+                    </a></li>
+                <li class="question"><a href="./question.html">
+                        <div><img src="./images/list_question.png" alt=""></div>常見問題
+                    </a></li>
+            </ul>
+        </nav>
+
+        <nav class="mobile_nav">
+            <div class="mobile_comtent_all">
+                <div class="moblie_logo"><a href="./index.html"><img src="./images/LOGO_FIN_orange.png" alt=""></a>
+                </div>
+                <div class="right">
+                    <div class="login"><a href="./login.html">
+                            <div class="icon"><img src="./images/list_member.png" alt=""></div>
+                            登入
+                        </a></div>
+                    <div class="register"><a href="./register1.html">
+                            <div class="icon"><img src="./images/list_register.png" alt=""></div>
+                            加入我們
+                        </a></div>
+
+                    <button class="hamburger hamburger--spin" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="hamburger_menu">
+                    <ul class="ul_first">
+                        <li class="pair list_pair" id="list_pair">
+                            <div><img src="./images/list_relationship.png" alt=""></div>配對聊天 ▼
+
+                            <ul class="ul_second list_pair_item" id="list_pair_item">
+                                <li><a href="./pair.html"><i>選擇對象</i></a></li>
+                                <li><a href="./pair.html"><i>聊天室</i></a></li>
+                            </ul>
+                        </li>
+                        <li class="practice list_practice" id="list_practice">
+                            <div><img src="./images/list_practice.png" alt=""></div>戀愛修行 ▼
+                            <ul class="ul_second list_practice_item">
+                                <li><a href="./practice.html"><i>課程學習</i></a></li>
+                                <li><a href="./practice.html"><i>戶外郊遊</i></a></li>
+                                <li><a href="./practice.html"><i>文青行程</i></a></li>
+                                <li><a href="./practice.html"><i>客製化</i></a></li>
+                            </ul>
+                        </li>
+                        <li class="graduation"><a href="./graduation.html">
+                                <div><img src="./images/list_diploma.png" alt=""></div>校友花絮
+                            </a></li>
+                        <li class="question"><a href="./question.html">
+                                <div><img src="./images/list_question.png" alt=""></div>常見問題
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="fixed_right">
+        <div class="top" id="go_top">
+            <div class="icon"><img src="./images/start-up.png" alt=""></div>
+        </div>
+        <div class="right_login"><a href="./login.html">
+                <div class="icon"><img src="./images/list_member.png" alt=""></div>
+                <span>登入</span>
+            </a></div>
+        <div class="right_register"><a href="./register1.html">
+                <div class="icon"><img src="./images/list_register.png" alt=""></div><span>註冊</span>
+            </a></div>
+    </div>
+
+    <div class="banner_top"></div>
+    <div class="main_title">
+        <h1>配對聊天</h1>
+    </div>
+
+    <main>
+        <section class="choose_person">
+
+            <h2>選擇對象</h2>
+            <div class="condition_all">
+                <!-- <div class="search">搜尋<input type="text" name="" id="" placeholder="喜歡籃球"></div> -->
+                <div class="condition_title"><i>擇偶條件</i><br>若無填寫將視為皆可</div>
+                <div class="condition_input">
+                    <div class="choose_item">
+                        <select name="" id="">
+                            <option value="" style="display: none">性別</option>
+                            <option value="man">男</option>
+                            <option value="weman">女</option>
+                            <option value="weman">皆可</option>
+                        </select>
+                    </div>
+                    <div class="choose_item">
+                        <select name="" id="">
+                            <option value="" style="display: none">身高範圍</option>
+                            <option value="">149cm(含)以下</option>
+                            <option value="">150-159cm</option>
+                            <option value="">160-169cm</option>
+                            <option value="">170-179cm</option>
+                            <option value="">180-189cm</option>
+                            <option value="">190cm(含)以上</option>
+                        </select>
+                    </div>
+                    <div class="choose_item">
+                        <select name="" id="">
+                            <option value="" style="display: none">學歷</option>
+                            <option value="">高中</option>
+                            <option value="">專科</option>
+                            <option value="">學士</option>
+                            <option value="">碩士</option>
+                            <option value="">博士</option>
+                        </select>
+                    </div>
+                    <!-- <div class="choose_item">
+                        <select class="marry" name="marry" id="" required>
+                            <option value="" style="display: none">婚姻狀況</option>
+                            <option value="">首次婚姻</option>
+                            <option value="">二次婚姻</option>
+                        </select>
+                    </div> -->
+                    <div class="choose_item">
+                        <select name="" id="">
+                            <option value="" style="display: none">居住縣市</option>
+                            <option value="1">台北市</option>
+                            <option value="2">基隆市</option>
+                            <option value="3">新北市</option>
+                            <option value="4">宜蘭市</option>
+                            <option value="5">新竹市</option>
+                            <option value="6">新竹縣</option>
+                            <option value="7">桃園市</option>
+                            <option value="8">苗栗縣</option>
+                            <option value="9">台中市</option>
+                            <option value="10">彰化縣</option>
+                            <option value="11">南投縣</option>
+                            <option value="12">嘉義市</option>
+                            <option value="13">嘉義縣</option>
+                            <option value="14">雲林縣</option>
+                            <option value="15">台南市</option>
+                            <option value="16">高雄市</option>
+                            <option value="17">屏東縣</option>
+                            <option value="18">台東縣</option>
+                            <option value="19">花蓮縣</option>
+                            <option value="20">澎湖縣</option>
+                            <option value="21">金門縣</option>
+                            <option value="22">連江縣</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="condition_checkbox">
+                    <div class="condition_checkbox_item condition_personality">
+                        <div class="condition_checkbox_title"><b>性格</b></div>
+                        <div class="item_all">
+                            <ul>
+                                <li><label><input type="checkbox" name="" id="">內向</label></li>
+                                <li><label><input type="checkbox" name="" id="">外向</label></li><br>
+                                <li><label><input type="checkbox" name="" id="">務實</label></li>
+                                <li><label><input type="checkbox" name="" id="">浪漫</label></li><br>
+                                <li><label><input type="checkbox" name="" id="">獨立</label></li>
+                                <li><label><input type="checkbox" name="" id="">依賴</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="condition_checkbox_item condition_intrest">
+                        <div class="condition_checkbox_title"><b>興趣</b></div>
+                        <div class="item_all">
+                            <ul class="intrest">
+                                <li><label><input type="checkbox" name="" id="">看影劇</label></li>
+                                <li><label><input type="checkbox" name="" id="">看動畫</label></li>
+                                <li><label><input type="checkbox" name="" id="">聽音樂</label></li>
+                                <li><label><input type="checkbox" name="" id="">唱歌</label></li>
+                                <li><label><input type="checkbox" name="" id="">美食</label></li>
+                                <li><label><input type="checkbox" name="" id="">旅遊</label></li>
+                                <li><label><input type="checkbox" name="" id="">運動</label></li>
+                                <li><label><input type="checkbox" name="" id="">看書</label></li>
+                                <li><label><input type="checkbox" name="" id="">上網</label></li>
+                                <li><label><input type="checkbox" name="" id="">戶外走走</label></li>
+                                <li><label><input type="checkbox" name="" id="">室內休閒</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="search_button"><input type="button" value="搜尋" class="level_one_button" id="search_button">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="choose_person2" id="choose_person2">
+            <div class="choose_person_bar">
+                <div class="left arrow" id="left_btn"><img id="left_img" src="./images/arrow_left.png" alt=""></div>
+                <div class="person_all">
+                    <div class="wrap">
+                        <div class="person"><img src="./images/man1_1-1.jpg" alt=""></div>
+                        <div class="person"><img src="./images/person_man2.jpg" alt=""></div>
+
+                        <div class="person"><img src="./images/person_man1.jpg" alt=""></div>
+                        <div class="person"><img src="./images/woman2_1-1.jpg" alt=""></div>
+                        <div class="person choose"><img src="./images/woman1_1-1.jpg" alt=""></div>
+                        <div class="person"><img src="./images/man1_1-1.jpg" alt=""></div>
+                        <div class="person"><img src="./images/person_man2.jpg" alt=""></div>
+
+                        <div class="person"><img src="./images/person_man1.jpg" alt=""></div>
+                        <div class="person"><img src="./images/woman2_1-1.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="right arrow" id="right_btn"><img id="right_img" src="./images/arrow_right.png" alt=""></div>
+            </div>
+
+        </section>
+
+
+
+        <section class="detail" id="detail">
+            <div class="line"></div>
+            <div class="detail_all">
+                <div class="chose_img"><img id="chose_img_img" src="./images/choose_w.jpg" alt=""></div>
+                <div class="sex_img"><img id="sex_img_img" src="./images/femenine.png" alt=""></div>
+                <div class="information">
+                    <div class="person_content">
+                        <div class="first_row">
+                            <span class="name">洪禎成</span>
+                            <span class="age">27歲</span>
+                        </div>
+                        <div class="have_icon">
+                            <div class="job">
+                                <div class="job_img"><img src="./images/briefcase.png" alt=""></div>前端工程師
+                            </div>
+                            <div class="horoscope">
+                                <div class="horoscope_img"><img id="horoscope_img_img" src="./images/taurus.png" alt="">
+                                </div>
+                                <span>金牛座</span>
+                            </div>
+                            <div class="graduation">
+                                <div class="gradution_img"><img src="./images/mortarboard.png" alt=""></div>
+                                南亞技術學院 碩士
+                            </div>
+                            <div class="address">
+                                <div class="address_img"><img src="./images/map.png" alt=""></div>桃園市
+                            </div>
+                        </div>
+                        <div class="height">183cm</div>
+                        <div class="marry">未婚</div>
+                        <div class="content">
+                            <div>我喜歡兩個人的旅行，曾經去過歐洲，其中義大利是我最喜歡的，因為那裏的男生很浪漫。</div>
+                            <div>我是一個愛狗人，家裡有一隻馬爾濟斯，假日的時候會帶狗狗去海邊玩。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pair_button"><input type="button" value="配對" class="level_one_button" id="pair_button"></div>
+        </section>
+
+        <section class="chatroom" id="chatroom">
+            <div class="line"></div>
+            <div class="chatroom_all">
+                <div class="head_shot"><img src="./images/woman1_1-1.jpg" alt=""><span class="name">洪禎成</span></div>
+
+                <div class="chatroom_window">
+                    <div class="content">
+                        <div class="dialog">
+                            <div class="dialog1 dialog_detail">
+                                <p>你好，很高興認識你~</p>
+                            </div><br>
+                            <div class="dialog2 dialog_detail">
+                                <p>你好呀，我也喜歡旅遊呢!</p>
+                            </div><br>
+                            <div class="dialog1 dialog_detail">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vero sint assumenda
+                                    nemo. Fuga, veniam.</p>
+                            </div><br>
+                            <div class="dialog2 dialog_detail">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="input_window">
+                    <div class="push_bar">
+                        <div class="left">
+                            <div class="sticker"><img src="./images/sticker.png" alt=""></div>
+                            <div class="paper_clip"><img src="./images/paperclip-.png" alt=""></div>
+                            <div class="download"><img src="./images/down-arrow.png" alt=""></div>
+                            <div class="screenshot"><img src="./images/screenshot.png" alt=""></div>
+                        </div>
+                        <div class="right">
+                            <div class="call"><img src="./images/call-answer.png" alt=""></div>
+                            <div class="video"><img src="./images/facetime-button.png" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="input_bar">
+                        <textarea name="" id="" rows="5"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="block_button"><input type="button" id="open_lightbox" value="封鎖"></div>
+        </section>
+
+        <div id="block_lightbox">
+            <div class="lightbox_content_all">
+                <div class="lightbox_content">若封鎖以後就遇不到對方了喔!<div class="sad_img"><img src="./images/anxiety.png" alt="">
+                    </div>
+                </div>
+                <input type="button" class="back_btn level_one_button" id="back_btn" value="再聊看看">
+                <input type="button" class="block_corect" id="block_button" value="確定封鎖">
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="background_color_footer"></div>
+        <div class="footer_img"><img src="./images/1-4cut.png" alt=""></div>
+        <div class="logo logo_mobile"><img src="./images/LOGO_FIN.png" alt=""></div>
+        <div class="footer_content">
+            <div class="left">
+                <div class="contact">聯絡方式</div>
+                <div class="tel">TEL:03-425-7389</div>
+                <div class="fax">FAX:02-2737-7119</div>
+                <div class="address">320桃園市中壢區中大路300號</div>
+            </div>
+            <div class="right">
+
+                <div class="about_us"><span><a href="./about_us.html">關於我們</a></span></div>
+                <div class="branch"><span><a href="./branch.html">服務據點</a></span></div>
+            </div>
+            <div class="logo logo_computer"><img src="./images/LOGO_FIN.png" alt=""></div>
+        </div>
+        <div class="copyright">©2019 All Rights Reserved By TZU-YU,CHEN</div>
+    </footer>
+    <script>
+        $('#search_button').click(function () {
+            $('html, body').animate({
+                scrollTop: $('#choose_person2').offset().top
+            }, "slow");
+        }); //代表一個完整的執行區塊
+
+        $('#pair_button').click(function () {
+            $('html, body').animate({
+                scrollTop: $('#chatroom').offset().top
+            }, "slow");
+        }); //代表一個完整的執行區塊
+
+        $('#block_button').click(function () {
+            $('html, body').animate({
+                scrollTop: $('body').offset().top
+            }, "slow");
+        }); //代表一個完整的執行區塊
+    </script>
+
+    <script>
+        function $id(id) {
+            return document.getElementById(id);
+        }
+        let wrap = document.getElementsByClassName("wrap")[0];
+        var curIndex = 0;
+        $id("left_btn").onclick = function (e) {
+            var img_left = 'arrow_left';
+            var img_left_disable = 'arrow_left_disable';
+            document.getElementById("right_img").src = './images/arrow_right.png';
+
+            if (window.innerWidth < 1200 && window.innerWidth > 768) {
+                if (curIndex == -3) {
+                    // e.preventDefault();
+                    document.getElementById("left_img").src = './images/' + img_left_disable + '.png';
+                } else {
+                    curIndex--;
+                    document.getElementById("left_img").src = './images/' + img_left + '.png';
+                    wrap.style.left = ((-190 * curIndex) - 570) + "px";
+                    console.log(curIndex)
+                    if (curIndex == -3) {
+                        // wrap.style.left = '0px';
+                        document.getElementById("left_img").src = './images/' + img_left_disable + '.png';
+                    }
+                }
+                if (curIndex == 1) {
+                    document.getElementById("chose_img_img").src = './images/adult-attractive-blur-2904116.jpg';
+                    document.getElementById("sex_img_img").src = './images/masculine.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.first_row span.name"
+                        )
+                        .innerHTML = "郝真成";
+                    document.getElementById("horoscope_img_img").src = './images/capricorn.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.horoscope span")
+                        .innerHTML = "摩羯座";
+                }
+                if (curIndex == 0) {
+                    document.getElementById("chose_img_img").src = './images/choose_w.jpg';
+                    document.getElementById("sex_img_img").src = './images/femenine.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.first_row span.name"
+                        )
+                        .innerHTML = "洪禎成";
+                    document.getElementById("horoscope_img_img").src = './images/taurus.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.horoscope span")
+                        .innerHTML = "金牛座";
+                }
+            } else if (window.innerWidth < 767) {
+                if (curIndex == -4) {
+                    // e.preventDefault();
+                    document.getElementById("left_img").src = './images/' + img_left_disable + '.png';
+                } else {
+                    curIndex--;
+                    document.getElementById("left_img").src = './images/' + img_left + '.png';
+                    wrap.style.left = ((-190 * curIndex) - 760) + "px";
+                    console.log(curIndex)
+                    if (curIndex == -4) {
+                        // wrap.style.left = '0px';
+                        document.getElementById("left_img").src = './images/' + img_left_disable + '.png';
+                    }
+                }
+                if (curIndex == 1) {
+                    document.getElementById("chose_img_img").src = './images/adult-attractive-blur-2904116.jpg';
+                    document.getElementById("sex_img_img").src = './images/masculine.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.first_row span.name"
+                        )
+                        .innerHTML = "郝真成";
+                    document.getElementById("horoscope_img_img").src = './images/capricorn.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.horoscope span")
+                        .innerHTML = "摩羯座";
+                }
+                if (curIndex == 0) {
+                    document.getElementById("chose_img_img").src = './images/choose_w.jpg';
+                    document.getElementById("sex_img_img").src = './images/femenine.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.first_row span.name"
+                        )
+                        .innerHTML = "洪禎成";
+                    document.getElementById("horoscope_img_img").src = './images/taurus.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.horoscope span")
+                        .innerHTML = "金牛座";
+                }
+            } else {
+
+
+                if (curIndex == -2) {
+                    // e.preventDefault();
+                    document.getElementById("left_img").src = './images/' + img_left_disable + '.png';
+                } else {
+                    curIndex--;
+                    document.getElementById("left_img").src = './images/' + img_left + '.png';
+                    wrap.style.left = ((-190 * curIndex) - 380) + "px";
+                    if (curIndex == -2) {
+                        // wrap.style.left = '0px';
+                        document.getElementById("left_img").src = './images/' + img_left_disable + '.png';
+                    }
+                }
+                if (curIndex == 1) {
+                    document.getElementById("chose_img_img").src = './images/adult-attractive-blur-2904116.jpg';
+                    document.getElementById("sex_img_img").src = './images/masculine.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.first_row span.name"
+                        )
+                        .innerHTML = "郝真成";
+                    document.getElementById("horoscope_img_img").src = './images/capricorn.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.horoscope span")
+                        .innerHTML = "摩羯座";
+                }
+                if (curIndex == 0) {
+                    document.getElementById("chose_img_img").src = './images/choose_w.jpg';
+                    document.getElementById("sex_img_img").src = './images/femenine.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.first_row span.name"
+                        )
+                        .innerHTML = "洪禎成";
+                    document.getElementById("horoscope_img_img").src = './images/taurus.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.horoscope span")
+                        .innerHTML = "金牛座";
+                }
+            }
+        }
+
+        $id("right_btn").onclick = function (e) {
+            var img_right = 'arrow_right';
+            var img_right_disable = 'arrow_right_disable';
+            document.getElementById("left_img").src = './images/arrow_left.png';
+            if (window.innerWidth < 1200 && window.innerWidth > 768) {
+                if (curIndex == 3) {
+                    // e.preventDefault();
+                    document.getElementById("right_img").src = './images/' + img_right_disable + '.png';
+                } else {
+                    curIndex++;
+                    document.getElementById("right_img").src = './images/' + img_right + '.png';
+                    wrap.style.left = ((-190 * curIndex) - 570) + "px";
+                    if (curIndex == 3) {
+                        // wrap.style.left = '0px';
+                        document.getElementById("right_img").src = './images/' + img_right_disable + '.png';
+                    }
+                }
+                if (curIndex == 1) {
+                    document.getElementById("chose_img_img").src =
+                        './images/adult-attractive-blur-2904116.jpg';
+                    document.getElementById("sex_img_img").src = './images/masculine.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.first_row span.name"
+                        )
+                        .innerHTML = "郝真成";
+                    document.getElementById("horoscope_img_img").src = './images/capricorn.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.horoscope span"
+                        )
+                        .innerHTML = "摩羯座";
+                }
+                if (curIndex == 0) {
+                    document.getElementById("chose_img_img").src = './images/choose_w.jpg';
+                    document.getElementById("sex_img_img").src = './images/femenine.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.first_row span.name"
+                        )
+                        .innerHTML = "洪禎成";
+                    document.getElementById("horoscope_img_img").src = './images/taurus.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.horoscope span"
+                        )
+                        .innerHTML = "金牛座";
+                }
+            } else if (window.innerWidth < 767) {
+                if (curIndex == 4) {
+                    // e.preventDefault();
+                    document.getElementById("right_img").src = './images/' + img_right_disable + '.png';
+                } else {
+                    curIndex++;
+                    document.getElementById("right_img").src = './images/' + img_right + '.png';
+                    wrap.style.left = ((-190 * curIndex) - 760) + "px";
+                    if (curIndex == 4) {
+                        // wrap.style.left = '0px';
+                        document.getElementById("right_img").src = './images/' + img_right_disable + '.png';
+                    }
+                }
+                if (curIndex == 1) {
+                    document.getElementById("chose_img_img").src =
+                        './images/adult-attractive-blur-2904116.jpg';
+                    document.getElementById("sex_img_img").src = './images/masculine.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.first_row span.name"
+                        )
+                        .innerHTML = "郝真成";
+                    document.getElementById("horoscope_img_img").src = './images/capricorn.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.horoscope span"
+                        )
+                        .innerHTML = "摩羯座";
+                }
+                if (curIndex == 0) {
+                    document.getElementById("chose_img_img").src = './images/choose_w.jpg';
+                    document.getElementById("sex_img_img").src = './images/femenine.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.first_row span.name"
+                        )
+                        .innerHTML = "洪禎成";
+                    document.getElementById("horoscope_img_img").src = './images/taurus.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.horoscope span"
+                        )
+                        .innerHTML = "金牛座";
+                }
+            } else {
+                if (curIndex == 2) {
+                    // e.preventDefault();
+                    document.getElementById("right_img").src = './images/' + img_right_disable + '.png';
+                } else {
+                    curIndex++;
+                    document.getElementById("right_img").src = './images/' + img_right + '.png';
+                    wrap.style.left = ((-190 * curIndex) - 380) + "px";
+                    if (curIndex == 2) {
+                        // wrap.style.left = '0px';
+                        document.getElementById("right_img").src = './images/' + img_right_disable + '.png';
+                    }
+                }
+                if (curIndex == 1) {
+                    document.getElementById("chose_img_img").src = './images/adult-attractive-blur-2904116.jpg';
+                    document.getElementById("sex_img_img").src = './images/masculine.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.first_row span.name"
+                        )
+                        .innerHTML = "郝真成";
+                    document.getElementById("horoscope_img_img").src = './images/capricorn.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.horoscope span")
+                        .innerHTML = "摩羯座";
+                }
+                if (curIndex == 0) {
+                    document.getElementById("chose_img_img").src = './images/choose_w.jpg';
+                    document.getElementById("sex_img_img").src = './images/femenine.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.first_row span.name"
+                        )
+                        .innerHTML = "洪禎成";
+                    document.getElementById("horoscope_img_img").src = './images/taurus.png';
+                    document.querySelector(
+                            "section.detail div.detail_all div.information div.person_content div.horoscope span")
+                        .innerHTML = "金牛座";
+                }
+            }
+        }
+    </script>
+
+
+    <script>
+        // 搜尋按鈕展開
+        function search_fun() {
+            document.getElementById("choose_person2").style.height = "220px";
+
+            if (window.innerWidth < 992 && window.innerWidth >= 768) {
+                document.getElementById("detail").style.height = "760px";
+            } else if (window.innerWidth < 768) {
+                document.getElementById("detail").style.height = "820px";
+            } else {
+                document.getElementById("detail").style.height = "640px";
+            }
+        }
+
+        // 配對按鈕展開
+        function pair_fun() {
+            document.getElementById("chatroom").style.height = "975px";
+        }
+        //封鎖燈箱
+        function lightbox_fun() {
+            document.getElementById("block_lightbox").style.display = "block";
+            document.getElementById("block_lightbox").style.opacity = "1";
+            document.getElementById("block_lightbox").style.zIndex = "50";
+            document.body.style.overflowY = "hidden";
+            document.body.paddingRight = "17px";
+        }
+
+        function back_btn_fun() {
+            document.getElementById("block_lightbox").style.display = "none";
+            document.getElementById("block_lightbox").style.opacity = "0";
+            document.getElementById("block_lightbox").style.zIndex = "-10";
+            document.body.style.overflowY = "scroll";
+            document.body.paddingRight = "none";
+        }
+
+
+
+        // 確定封鎖按鈕收起
+        function block_fun() {
+            document.getElementById("chatroom").style.height = "0";
+            document.getElementById("detail").style.height = "0";
+            document.getElementById("choose_person2").style.height = "0";
+
+            document.getElementById("block_lightbox").style.display = "none";
+            document.getElementById("block_lightbox").style.opacity = "0";
+            document.getElementById("block_lightbox").style.zIndex = "-10";
+            document.body.style.overflowY = "scroll";
+            document.body.paddingRight = "none";
+        }
+
+        // function init() {
+        var search_button = document.getElementById("search_button");
+        search_button.addEventListener("click", search_fun);
+
+
+        var pair_button = document.getElementById("pair_button");
+        pair_button.addEventListener("click", pair_fun);
+
+        var open_lightbox = document.getElementById("open_lightbox");
+        open_lightbox.addEventListener("click", lightbox_fun);
+
+        var back_btn = document.getElementById("back_btn");
+        back_btn.addEventListener("click", back_btn_fun);
+
+        var block_button = document.getElementById("block_button");
+        block_button.addEventListener("click", block_fun);
+    </script>
+
+
+    <script src="./js/wow.min.js"></script>
+    <script>
+        var wow = new WOW({
+            boxClass: 'wow', // 要套用WOW.js縮需要的動畫class(預設是wow)
+            animateClass: 'animated', // 要"動起來"的動畫(預設是animated, 因此如果你有其他動畫library要使用也可以在這裡調整)
+            offset: 0, // 距離顯示多遠開始顯示動畫 (預設是0, 因此捲動到顯示時才出現動畫)
+            mobile: true, // 手機上是否要套用動畫 (預設是true)
+            live: true, // 非同步產生的內容是否也要套用 (預設是true, 非常適合搭配SPA)
+            callback: function (box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                // 當每個要開始時, 呼叫這裡面的內容, 參數是要開始進行動畫特效的element DOM
+            },
+        });
+        wow.init();
+    </script>
+
+    <script>
+        var header_active = function () {
+            // 取得使用者滑了多少 px
+            var scroll_top = $(window).scrollTop();
+            // 將 scroll_top 數值放到 p.-pos 內容
+            $("p.-pos").html(scroll_top);
+
+            if (scroll_top >= 200) {
+                $("div.fixed_right").addClass("-on");
+            } else {
+                $("div.fixed_right").removeClass("-on");
+            }
+        };
+        $(function () {
+            // 第三步：偵測頁面滑動時會觸發
+            $(window).scroll(function () {
+                header_active();
+            });
+        });
+    </script>
+
+
+    <script>
+        //go_top btn
+        // DOM 載入完成後執行
+        $(function () {
+
+            // 點擊按鈕，頁面滑到最上方
+            $("#go_top").on("click", function (e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 750);
+            });
+
+        });
+    </script>
+
+    <script src="./js/common/hamburger.js"></script>
+    <script>
+        $(function () {
+            // hamburger icon 的切換
+            $("button.hamburger").on("click", function () {
+                $(this).toggleClass("is-active");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

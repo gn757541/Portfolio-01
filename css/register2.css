@@ -1,0 +1,292 @@
+@import "./common/other.css";
+
+body {
+    position: relative;
+}
+
+div.banner_top {
+    background-image: url(../images/register.jpg);
+}
+
+main {
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0);
+    padding-bottom: 25%;
+    background: linear-gradient(45deg, rgba(245, 232, 74, 0.2)35%, rgba(250, 146, 218, 0.2)60%);
+}
+
+form {
+    width: 1183px;
+    font-size: 0;
+}
+
+@media (max-width: 1199px) {
+    form {
+        width: calc(100% - 10px);
+    }
+}
+
+form div.write_title {
+    text-align: center;
+}
+
+form div.explain_all {
+    margin: 15px 5%;
+}
+
+form div.explain_all p.explain {
+    font-size: 16px;
+    text-align: start;
+    /* width: 90%; */
+    margin: 10px auto;
+    line-height: 25px;
+}
+
+form div.explain_all p.notice {
+    color: rgb(110, 110, 110);
+    margin: 20px auto;
+}
+
+/*頭像上傳部分*/
+div.upload {
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+    width: calc(100% - 30px -10px);
+}
+
+div.upload1 {
+    background-color: rgba(231, 151, 151, 0.5)
+}
+
+div.upload2 {
+    background-color: rgba(231, 196, 151, 0.5)
+}
+
+div.upload3 {
+    background-color: rgba(151, 192, 231, 0.5)
+}
+
+div.upload4 {
+    background-color: rgba(158, 231, 151, 0.5)
+}
+
+div.upload div.img_icon {
+    border: 3px solid white;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+div.upload div.img_icon span.white {
+    position: absolute;
+    width: 100%;
+    /*  height: 30%; */
+    height: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border: 1px solid red; */
+}
+
+div.upload span.white span.plus {
+    position: absolute;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    clip-path: polygon(60% 0, 40% 0, 40% 40%, 0 40%, 0 60%, 40% 60%, 40% 100%, 60% 100%, 60% 60%, 100% 60%, 100% 40%, 60% 40%);
+    background-color: rgb(110, 110, 110);
+    /* border: 1px solid red; */
+
+}
+
+/*hover圖像部分*/
+div.upload div.img_icon:hover {
+    cursor: pointer;
+}
+
+div.upload div.img_icon:hover span.white {
+    width: 100%;
+    height: 30%;
+    transition: all 0.5s;
+
+}
+
+div.upload div.img_icon:hover span.white span.plus {
+    padding: 10%;
+    transition: all 0.5s;
+}
+
+input[type="file"] {
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    background-color: rgb(230, 230, 230);
+    /* width: 320px; */
+}
+
+
+
+div.upload div.img_icon img {
+    width: 100%;
+}
+
+div.upload div.img_icon {
+    width: 150px;
+    display: inline-block;
+}
+
+
+
+div.upload div.upload_img_content {
+    display: inline-block;
+    margin-left: 60px;
+    vertical-align: top;
+    /* border: 1px solid red; */
+}
+
+div.upload div.upload_img_content div.limit {
+    color: rgb(110, 110, 110);
+    font-size: 16px;
+}
+
+main div.agree_rule_bar {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+main div.agree_rule_bar span.rule {
+    border-bottom: 1px solid rgb(110, 110, 110);
+}
+
+main div.agree_rule_bar span.rule:hover {
+    cursor: pointer;
+}
+
+/*放棄填寫紐*/
+
+form div.give_up a {
+    /* border: 1px solid red; */
+    color: rgb(110, 110, 110);
+    font-size: 16px;
+    display: inline-block;
+    padding: 5px;
+    border-bottom: 1px solid rgb(110, 110, 110);
+    margin: 10px 0px;
+}
+
+@media screen and (max-width:767px) {
+    div.upload div.upload_img_content {
+        display: block;
+        margin: 0 auto;
+    }
+
+
+}
+
+
+
+
+
+/*燈箱部分*/
+
+#light_box_rule {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: -10;
+    /* text-align: center; */
+    /* margin: 0 auto; */
+    /* display: none; */
+    opacity: 0;
+    transition:all 0.5s;
+}
+
+div.light_box_rule div.rule_box {
+    width: 1183px;
+    /* height: 65%; */
+    height: 500px;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    margin: 10% auto;
+    background-color: white;
+
+}
+
+@media (max-width: 1199px) {
+    div.light_box_rule div.rule_box {
+        width: 95%;
+        /* width: calc(100% - 10px); */
+    }
+}
+
+div.light_box_rule div.rule_box div.rule_content {
+    height: 70%;
+    overflow-y: scroll;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+div.light_box_rule div.rule_box h2 {
+    text-align: center;
+    padding: 15px 0;
+}
+
+div.light_box_rule div.rule_box div.rule_content p {
+    margin-left: 2em;
+    text-indent: -2em;
+}
+
+div.light_box_rule div.rule_box div.rule_content p.explain {
+    margin-left: 0;
+    text-indent: 0;
+}
+
+div.light_box_rule div.rule_box div.rule_content p span {
+    display: block;
+    /* margin-left: 2em; */
+    text-indent: -1em;
+}
+
+div.light_box_rule div.rule_box div.rule_content p span span {
+    display: block;
+    margin-left: 2em;
+    text-indent: -1em;
+    /* border: 1px solid red; */
+}
+
+
+div.end_buttons>a {
+    /* border: 1px solid red; */
+    display: inline-block;
+}
+
+/*關閉鈕*/
+div.light_box_rule div.rule_box div.close {
+    text-align: center;
+    /* margin: 5%; */
+    margin: 15px 0;
+}
+
+footer {
+    margin-top: -20%;
+
+}
+
+
+@media screen and (max-width:767px) {
+    main {
+        padding-bottom: 500px;
+    }
+
+    footer {
+        margin-top: -450px;
+    }
+}

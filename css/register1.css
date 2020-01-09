@@ -1,0 +1,233 @@
+@import "./common/other.css";
+
+div.banner_top {
+    background-image: url(../images/register.jpg);
+}
+
+main {
+    border: 1px solid rgba(255,255,255,0);
+    padding-bottom: 25%;
+    background: linear-gradient(45deg, rgba(245, 232, 74, 0.2)35%, rgba(250, 146, 218, 0.2)60%);
+}
+
+form {
+
+    width: 1183px;
+    font-size: 0;
+}
+
+@media (max-width: 1199px) {
+    form {
+        width: calc(100% - 10px);
+    }
+}
+
+form p.star:before {
+    content: ' *';
+    color: #999;
+    font-size: 1.1rem;
+    padding: 0;
+
+}
+
+form div.write_title {
+    /* font-size: 24px; */
+    /* border: 1px solid blue; */
+    text-align: center;
+    padding: 7px;
+}
+
+form div.write_all {
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+}
+
+form div.write_all div.write_left,
+form div.write_all div.write_right {
+    /* border: 1px solid blue; */
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+@media screen and (max-width:991px) {
+
+    form div.write_all div.write_left,
+    form div.write_all div.write_right {
+        display: block;
+        width: 100%;
+    }
+}
+
+form div.write_all div.write_left div.item div.item_title,
+form div.write_all div.write_right div.item div.item_title {
+    /* border: 1px solid red; */
+    font-size: 16px;
+    display: block;
+    width: 100px;
+    text-align: start;
+    box-sizing: border-box;
+}
+
+form div.write_all div.write_left div.item div.input_bar,
+form div.write_all div.write_right div.item div.input_bar {
+    /* border: 1px solid red; */
+    font-size: 16px;
+    display: inline-block;
+    width: calc(100% - 100px);
+    box-sizing: border-box;
+    text-align: left;
+    padding: 0 15px;
+}
+
+div.input_bar input[type="text"],
+div.input_bar input[type="password"],
+div.input_bar input[type="date"] {
+    width: calc(100% - 30px);
+}
+
+div.input_bar select {
+    width: 100%;
+}
+
+div.education div.input_bar div.education_radio {
+    width: 80px;
+    display: inline-block;
+}
+
+div.job div.input_bar div.job_radio {
+    width: 120px;
+    display: inline-block;
+}
+
+div.education div.input_bar,
+div.job div.input_bar {
+    vertical-align: middle;
+}
+
+
+
+/*職業*/
+div.job div.item_title {
+    /* border: 1px solid red; */
+    font-size: 16px;
+    display: block;
+    width: 100px;
+    text-align: start;
+    box-sizing: border-box;
+}
+
+div.job div.input_bar {
+    /* border: 1px solid red; */
+    font-size: 16px;
+    display: inline-block;
+    width: calc(100% - 100px);
+    box-sizing: border-box;
+    text-align: left;
+    padding: 0 15px;
+}
+
+div.job div.job_detail {
+    /* border: 1px solid red; */
+    font-size: 16px;
+    width: calc(100% - 100px - 15px);
+    box-sizing: border-box;
+    text-align: left;
+    margin-left: 50px;
+}
+
+div.job div.job_detail input {
+    width: calc(100% - 30px);
+}
+
+label {
+    padding: 0 10px;
+}
+
+
+.hr {
+    width: 80%;
+    border: 1px solid rgba(110, 110, 110, 0.2);
+    margin: 50px auto;
+}
+
+/*選擇checkbox*/
+
+
+div.checkbox_all {
+    font-size: 16px;
+    text-align: start;
+    margin: 0 15px;
+}
+
+
+
+div.checkbox_all ul li {
+    list-style: none;
+    /* border: 1px solid red; */
+    display: inline-block;
+    width: 150px;
+}
+
+div.checkbox_all ul input[type="text"] {
+    width: calc(100% - 30px - 40px);
+}
+
+
+
+/*簡短自我介紹*/
+div.key_in {
+    font-size: 16px;
+    text-align: start;
+    margin: 0 15px;
+}
+
+div.key_in div.introduction,
+div.key_in div.hope {
+    margin: 2% 0;
+}
+
+div.key_in textarea {
+    width: 100%;
+}
+
+div.end_buttons>a {
+    /* border: 1px solid red; */
+    display: inline-block;
+}
+
+
+/*放棄填寫紐*/
+
+form div.give_up a {
+    /* border: 1px solid red; */
+    color: rgb(110, 110, 110);
+    font-size: 16px;
+    display: inline-block;
+    padding: 5px;
+    border-bottom: 1px solid rgb(110, 110, 110);
+    margin: 10px 0px;
+}
+
+footer {
+    margin-top: -20%;
+
+}
+
+
+
+@media screen and (max-width:767px) {
+    form div.write_all {
+        width: 100%;
+    }
+
+    main {
+        padding-bottom: 500px;
+    }
+
+    footer {
+        margin-top: -450px;
+    }
+}

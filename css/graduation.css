@@ -1,0 +1,242 @@
+@import "./common/other.css";
+
+
+div.banner_top {
+    background-image: url(../images/graduation.jpeg);
+}
+
+main {
+    margin-top: 5%;
+    width: 1183px;
+    margin: 15px auto;
+    text-align: center;
+    /* border: 1px solid red; */
+    font-size: 0;
+}
+
+
+
+main div.card_all {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:1200px) {
+    main {
+        width: 100%;
+    }
+
+    main div.card_all {
+        justify-content: space-around;
+    }
+}
+
+main div.card_all dl {
+    border: 1px solid rgba(110, 110, 110, 0.5);
+    border-radius: 10px;
+    /* padding: 10px; */
+    width: 350px;
+    margin: 0 5px 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px rgba(110, 110, 110, 0.5);
+    box-sizing: border-box;
+}
+
+main div.card_all dl a {
+    /* border: 1px solid red; */
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main div.card_all dl div.status {
+    font-size: 16px;
+    position: absolute;
+    /* border: 1px solid blue; */
+
+    color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 3px rgba(110, 110, 110, 0.5);
+    top: 10px;
+    right: -25px;
+    transform: rotate(45deg);
+    width: 100px;
+    line-height: 30px;
+}
+
+main div.card_all dl div.married {
+    background-color: rgba(209, 38, 38, 0.7);
+}
+
+main div.card_all dl div.relationship {
+    background-color: rgba(209, 38, 95, 0.7);
+}
+
+main div.card_all dl div.card_img img {
+    width: 100%;
+}
+
+main div.card_all dl div.card_img {
+    width: 100%;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+
+main div.card_all dl dt {
+    font-size: 18px;
+    text-align: start;
+}
+
+main div.card_all dl dt h4 {
+    color: rgb(0, 0, 0);
+}
+
+main div.card_all dl dd {
+    font-size: 16px;
+    text-align: start;
+    color: rgb(70, 70, 70);
+}
+
+main div.card_all dl div.more {
+    text-align: end;
+    font-size: 16px;
+    /* border: 1px solid red; */
+    /* padding: 5px 10px; */
+    color: rgb(110, 110, 110);
+}
+
+main div.card_all dl div.more span {
+    border-bottom: 1px solid rgb(110, 110, 110);
+}
+
+main div.card_all dl:hover {
+    background-color: rgba(255, 225, 161, 0.5)
+}
+
+/*分頁標籤*/
+div.pagination_block {
+    display: inline-block;
+
+}
+
+div.pagination_block>ul.pagination {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    /* border: 1px solid red; */
+}
+
+div.pagination_block>ul.pagination>li {
+    display: inline-block;
+    /* border: 1px solid blue; */
+    margin: 10px 0;
+}
+
+div.pagination_block>ul.pagination>li a {
+    font-size: 16px;
+    /* border: 1px solid red; */
+    display: inline-block;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 0 5px;
+    color: rgb(110, 110, 110);
+    line-height: 30px;
+    box-sizing: border-box;
+}
+
+div.pagination_block>ul.pagination>li:nth-child(2) a,
+div.pagination_block>ul.pagination>li:nth-child(7) a {
+    background-color: rgba(255, 175, 175, 0.5);
+}
+
+div.pagination_block>ul.pagination>li:nth-child(3) a,
+div.pagination_block>ul.pagination>li:nth-child(8) a {
+    background-color: rgba(144, 212, 233, 0.5);
+}
+
+div.pagination_block>ul.pagination>li:nth-child(4) a,
+div.pagination_block>ul.pagination>li:nth-child(9) a {
+    background-color: rgba(212, 167, 255, 0.5);
+}
+
+div.pagination_block>ul.pagination>li:nth-child(5) a,
+div.pagination_block>ul.pagination>li:nth-child(10) a {
+    background-color: rgba(167, 255, 201, 0.5);
+}
+
+div.pagination_block>ul.pagination>li:nth-child(6) a,
+div.pagination_block>ul.pagination>li:nth-child(11) a {
+    background-color: rgba(255, 215, 140, 0.5);
+}
+
+div.pagination_block>ul.pagination>li a:hover {
+    /* background-color: rgba(110, 110, 110, 0.1); */
+    border: 2px solid rgba(255, 255, 255, 1);
+}
+
+div.pagination_block>ul.pagination>li div.arrow img {
+    width: 100%;
+}
+
+div.pagination_block>ul.pagination>li div.arrow {
+    width: 12px;
+    margin: 0 auto;
+}
+
+div.pagination_block>ul.pagination>li>a.-on {
+    /* background-color: rgba(255,255,255,1); */
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 3px 3px 3px rgba(110, 110, 110, 0.5);
+    transform: translateY(-3px, -3px);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+/*燈箱部分*/
+/* main div.light_box {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+
+}
+
+main div.light_box div.mask {
+    background-color: rgba(110, 110, 110, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+main div.light_box div.mask div.information_all {
+    width: 70%; */
+    /* margin: 0 auto; */
+    /* border: 1px solid red;
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+main div.light_box div.mask div.information_all div.graduation_img img {
+    width: 100%;
+}
+
+main div.light_box div.mask div.information_all div.graduation_img {
+    width: 40%;
+    display: inline-block;
+}
+
+main div.light_box div.mask div.information_all div.information_content {
+    text-align: start;
+} */

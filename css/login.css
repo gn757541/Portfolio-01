@@ -1,0 +1,99 @@
+@import "./common/other.css";
+
+
+main {
+    /* width: 1200px; */
+    /* width: 100%; */
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 20%;
+    /* border: 1px solid red; */
+    text-align: center;
+    /* box-sizing: border-box; */
+    background: linear-gradient(45deg, rgba(74, 150, 245, 0.3)35%, rgba(250, 204, 146, 0.5)60%);
+    /* position: relative; */
+}
+
+form.login_word {
+    /* border: 1px solid blue; */
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px rgb(110, 110, 110) inset;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 15px;
+    vertical-align: middle;
+}
+
+form.login_word div.login_content {
+    margin-top: 80px;
+    /* border: 1px solid red; */
+    /* text-align: start; */
+    /* width: 300px; */
+}
+
+form.login_word div.login_content div.account_title,
+form.login_word div.login_content div.password_title{
+    color: rgb(246, 138, 13);
+    /* border: 1px solid red; */
+    width: 200px;
+    margin: 0 auto;
+    text-align: start;
+    
+    
+}
+
+form.login_word div.login_content div.forget_password {
+    /* border: 1px solid red; */
+    width: 200px;
+    margin: 0 auto;
+    text-align: end;
+}
+
+form.login_word div.login_content div.forget_password a {
+    color: rgb(110, 110, 110);
+    /* padding: 5px; */
+    /* border: 1px solid red; */
+    border-bottom: 1px solid rgb(110, 110, 110);
+}
+
+form.login_word div.login_content div.register_button a {
+    /* border: 1px solid red; */
+    /* padding: 10px; */
+    border-bottom: 1px solid rgb(110, 110, 110);
+    color: rgb(110, 110, 110);
+}
+
+form.login_word div.login_content div.register_button {
+    /* border: 1px solid blue; */
+    padding: 10px;
+}
+
+
+footer {
+    margin-top: -20%;
+    /* top: -100%; */
+}
+
+@media screen and (max-width:767px) {
+    main {
+        padding-bottom: 500px;
+        padding-top: 50px;
+    }
+
+    footer {
+        margin-top: -450px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    form.login_word {
+        width: 300px;
+        height: 300px;
+    }
+
+    form.login_word div.login_content {
+        margin-top: 35px
+    }
+}

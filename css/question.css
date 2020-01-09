@@ -1,0 +1,203 @@
+@import "./common/other.css";
+
+div.banner_top {
+    background-image: url(../images/question.jpg);
+}
+
+main {
+    border: 1px solid rgba(255, 255, 255, 0);
+    margin: 0 auto;
+    text-align: center;
+    background: linear-gradient(45deg, rgba(74, 103, 245, 0.2)35%, rgba(152, 250, 146, 0.2)60%);
+
+    padding-bottom: 25%;
+}
+
+
+section.faq {
+    /* border: 1px solid blue; */
+    margin: 0 auto;
+    width: 1183px;
+    box-sizing: border-box;
+
+}
+
+
+
+section.faq div.q_all {
+    /* border: 1px solid red; */
+    margin-top: 5%;
+}
+
+section.faq div.q_img img,
+section.put_question div.q_img img {
+    width: 100%;
+}
+
+section.faq div.q_img,
+section.put_question div.q_img {
+    width: 100px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+
+section.faq div.q_all div.q_case {
+    /* border: 1px solid blue; */
+
+    width: 80%;
+    margin: 0 auto;
+}
+
+section.faq div.q_all div.q_case div.q_title {
+    /* border: 1px solid red; */
+    border-top: 2px solid rgba(245, 165, 74, 1);
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+    transition: all 0.5s;
+
+}
+
+section.faq div.q_all div.q_case div.q_title:hover {
+    cursor: pointer;
+}
+
+section.faq div.q_all div.q_case div.anwser {
+    /* border: 1px solid red; */
+    text-align: start;
+    width: 80%;
+    margin: 0 auto;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+section.faq div.q_all div.q_case div.anwser div.mul_item {
+    margin-left: 20px;
+    text-indent: -20px;
+    /* border: 1px solid red; */
+}
+
+
+
+section.faq div.q_all div.q_case div.q_title.q_title_choose {
+    background-color: rgba(245, 165, 74, 0.5);
+}
+
+/*手風琴767以上的高度*/
+section.faq div.q_all div.q_case div.anwser.anwser_open1 {
+    height: 160px;
+}
+
+section.faq div.q_all div.q_case div.anwser.anwser_open2 {
+    height: 450px;
+}
+
+section.faq div.q_all div.q_case div.anwser.anwser_open3 {
+    height: 570px;
+}
+
+/*手風琴767以下的高度*/
+section.faq div.q_all div.q_case div.anwser.anwser_open1_smallest {
+    height: 220px;
+}
+
+section.faq div.q_all div.q_case div.anwser.anwser_open2_smallest {
+    height: 610px;
+}
+
+section.faq div.q_all div.q_case div.anwser.anwser_open3_smallest {
+    height: 1085px;
+}
+
+/*提出問題*/
+section.put_question {
+    /* border: 1px solid blue; */
+    width: 1183px;
+    margin: 5% auto;
+    box-sizing: border-box;
+}
+
+section.put_question div.explain {
+    padding: 5px 15px;
+}
+
+section.put_question form {
+    padding: 15px;
+    /* width: calc(100% - 6px); */
+    width: 80%;
+}
+
+section.put_question form div.put_question_keyin_box div {
+    /* margin-top: 15px; */
+    width: 500px;
+    text-align: start;
+    margin: 15px auto 0 auto;
+}
+
+section.put_question form div.put_question_keyin_box input[type="text"] {
+    width: 470px;
+
+}
+
+section.put_question form div.put_question_keyin_box textarea {
+    width: 500px;
+}
+
+section.put_question form div.put_question_keyin_box textarea.put_question_title {
+    height: 40px;
+}
+
+section.put_question form div.put_question_keyin_box textarea.put_question_content {
+    height: 150px;
+}
+
+section.put_question form div.put_question_keyin_box div.put_question_button_box {
+    text-align: center;
+}
+
+footer {
+    margin-top: -20%;
+
+}
+
+
+@media screen and (max-width:1199px) {
+
+    section.faq,
+    section.put_question {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    main {
+        padding-bottom: 500px;
+    }
+
+    footer {
+        margin-top: -450px;
+    }
+
+    section.faq div.q_all div.q_case div.anwser {
+        width: calc(100% - 30px);
+        margin: 0 15px;
+    }
+
+    section.put_question form {
+        width: 95%;
+    }
+
+    section.put_question form div.put_question_keyin_box div {
+        width: 300px;
+    }
+
+    section.put_question form div.put_question_keyin_box input[type="text"] {
+        width: 270px;
+    }
+
+    section.put_question form div.put_question_keyin_box textarea {
+        width: 300px;
+    }
+
+
+}
